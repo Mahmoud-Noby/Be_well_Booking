@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BeWell Portal </title>
+    <link rel='icon' type="image/png" href="assets/imges/bewell-favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body >
+    <!-- Start Of Upper Bar -->
+    <div class="upper-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col contact">
+                    <a href="contact-us.html"><i class="fas fa-phone-alt"></i></a>
+                    <a href="contact-us.html"> Contact Us </a>
+                </div>
+                <div class="col-sm-10 ml-auto">
+                    <ul class="auth-area">
+                        <li> <a href="#" class="lang"> ع</a></li>
+                        <li><a href="#" class="doctor">You are aDoctor? Join Us</a></li>
+                        <li>
+                            <button type="button" class="doctor btn btn-secondary dropdown-toggle btn-sm"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="background-color: transparent; border: none; margin-bottom: 3px !important;">
+                                <i class="fas fa-user"></i>
+                            </button>
+                            <div class=" dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button"><a href="">My Profile</a></button>
+                                <button class="dropdown-item" type="button"><a
+                                        href="reservation-history.html">Reservation</a> </button>
+                                <button class="dropdown-item" type="button"><a href="">Logout</a></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Start OF  Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="main-media" src="assets/imges/BEWELL-RESIZE-logo.png" alt="Balsamee Logo">
+                <img class="media" src="assets/imges/bcamhs-icon.png">
+            </a>
+            <!--Media Query Navbar -->
+            <div class="contact-media-nav">
+                <a href="#">ع</a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+                <a href="#"> <i class="fas fa-user"></i></a>
+                <a href="#">Login</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">
+                            <img src="assets/imges/navbar/bcamhs-icon.png">
+                            Booking
+                        </a>
+                    </li>
+                    <a class="nav-link" href="#">
+                        <img src="assets/imges/navbar/findDoc.png">
+                        Home Visit
+                    </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/mediSrv.png">
+                            Nearby Medical Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/heaTip.png">
+                            Health Tips
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/navbar/video-icon.png">
+                            Tele-Medicine
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link doc-media" href="#">
+                            <img src="assets/imges/video-icon.png">
+                            Requset a video call doctor
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link doc-media" href="#">
+                            <img src="assets/imges/doctor.png">
+                            You are Doctor? Join Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!----------------------------------------------Doctor Details ---------------------------------------------->
+    <div class="doctor-card main">
+        <div class="container">
+            <!--doctor Card-->
+            <div class="row ">
+                <div class="col-lg-8 col-sm-12 doctor-details">
+                    <img src="assets/imges/product-grey-1.jpg" class="rounded"
+                        style="width:150px; height:150px; float: left; margin-right: 30px;">
+                    <h1>Doctor Full Name</h1>
+                    <h6>Consultant orthopedic surgery and spine surgery ,
+                        joints, and shoulder and knee injuries sidelined hospitals Police Authority</h6>
+                    <h6>Entity: 1215225815552</h6>
+                    <h6>Specialty: 1215225815552</h6>
+                    <h6>Tel: 1215225815552</h6>
+                    <hr />
+                    <h4>About Dr. Lamees Alshawkani</h4>
+                    <p>Lamees Alshawkani is a licensed optometrist practicing full scope eye care at SEE Eyewear in
+                        Soho.</p><br />
+                    <p>Dr. Alshawkani graduated with a Bachelor of Science in Health Science from George Mason
+                        University in 2009.
+                        She then went on to obtain her joint Doctorate of Optometry <a href="#"> …read more</a></p>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 doctor-details">
+                    <div class="form-row">
+                        <div class="form-group  ">
+                            <label for="">from</label>
+                            <input type="datetime-local" class="form-control">
+                        </div>
+                        <div class="form-group ">
+                            <label for="">to</label>
+                            <input type="datetime-local" class="form-control">
+                        </div>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        A simple primary alert—check it out!
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        A simple primary alert—check it out!
+                    </div>
+                    <!-- <button class="btn btn-sm btn-secondary form-control">Book Now</button> -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-primary form-control" data-toggle="modal"
+                        data-target="#exampleModalCenter">
+                        Book Now
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="exampleModalLongTitle">Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <input class="form-control" type="email" name="email"
+                                            placeholder="Enter Your Email" style="margin-bottom: 10px;">
+                                        <input class="form-control" type="password" name="password"
+                                            placeholder="Enter Your PAssword">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary btn-sm form-control "
+                                        data-dismiss="modal">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------End Doctor Details ---------------------------------------------->
+
+    <!---------------------------------------------- end upper footer------------------------------------------------------------------->
+    <div class="upper-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 ">
+                        <a class="footer-logo" href="https://booking-staging.balsamee.com/">
+                            <img src="assets/imges/logo45white@2x.png">
+                        </a>
+                        <p class="text-white-50">BeWell offers solutions for all specialties and healthcare providers</p>
+                        <div class="social-icon">
+                            <a href="https://www.twitter.com/balsamee_ltd?lang=en"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/balsamee/"><i class="fab fa-facebook-f "></i></a>
+                            <a href="https://instagram.com/balsamee.app?igshid=40h4jztlb6n9"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/balsamee"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <a href="https://apps.apple.com/gb/app/balsamee/id1097418150">
+                            <img src="assets/imges/footer/apple-store.png">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.nabdacare.nabdanet&hl=en">
+    
+                            <img src="assets/imges/footer/google-play-store.png">
+                        </a>
+                    </div>
+    
+    
+                    <div class="col-md-2 col-xs-12">
+                        <h5>Booking</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://balsamee.com/visiting-doctor?lang=en">Doctor</a></li>
+                            <li><a href="https://balsamee.com/medical-services?lang=en">Clinics</a></li>
+                            <li><a href="https://balsamee.com/camhs?lang=en">Specialties</a></li>
+                            <li><a href="https://balsamee.com/health-tips?lang=en">Labs</a></li>
+                            <li><a href="https://balsamee.com/health-tips?lang=en">radiology</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <h5>Services</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="">Booking</a></li>
+                            <li><a href="https://balsamee.com/visiting-doctor?lang=en">Home Visit</a></li>
+                            <li><a href="https://balsamee.com/medical-services?lang=en">Nearby Medical Services</a></li>
+                            <li><a href="https://balsamee.com/camhs?lang=en">BCAHMS</a></li>
+                            <li><a href="https://balsamee.com/health-tips?lang=en">Health Tips</a></li>
+                            <li><a href="https://balsamee.com/cross-border-treatments/international/search?lang=en">Cross
+                                    Border Treatment</a></li>
+                            <li><a href="https://balsamee.com/video-call?lang=en">Tele-Medicine</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12 ">
+                        <h5>Contact US</h5>
+                        <ul class="list-unstyled contactus">
+                            <li>
+                                <h6>UK (Head Office)</h6>
+                            </li>
+                            <p>Regus House, Falcon Drive, Cardiff bay,
+                                Cardiff, UK,
+                                CF10 4 RU</p>
+                            <li><strong><i class="fas fa-phone-alt"></i></strong>(+44)2922677250</li>
+                            <li><strong><i class="fas fa-fax"></i></strong>(+44)2920504001</li>
+                            <div class="egy-address">
+                                <li><strong>
+                                        <h6>Egypt</h6>
+                                </li>
+                                <p>14, Waleed Bin Thanian Al Saoud, Block 1163,
+                                    Sheraton, Heliopolis, Cairo,Egypt</p>
+                                <li><strong><i class="fas fa-phone-alt"></i></strong><span>(+20)1125000026</span></li>
+                                <li><strong><i class="fas fa-fax"></i></strong><span>(+20)222695640</span></li>
+    
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col copyright">
+                        <p class=""><small class="text-white-50">BeWell © 2019. All Rights Reserved.</small></p>
+                    </div>
+                </div>
+            </div>
+    
+    <!--------------------------------------------------------------end of footer-------------------------------------->
+
+    <!--js Libraries-->
+    <script src="js/jquery.js"></script>
+    <script src="js/poppper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

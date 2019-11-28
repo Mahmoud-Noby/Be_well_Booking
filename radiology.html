@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BeWell Portal </title>
+    <link rel='icon' type="image/png" href="assets/imges/bewell-favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- date time picker CSS -->
+    <link rel="stylesheet" href="js/build/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="labs-bgc">
+    <!-- Start Of Upper Bar -->
+    <div class="upper-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col contact">
+                    <a href="contact-us.html"><i class="fas fa-phone-alt"></i></a>
+                    <a href="contact-us.html"> Contact Us </a>
+                </div>
+                <div class="col-sm-10 ml-auto">
+                    <ul class="auth-area">
+                        <li> <a href="#" class="lang"> ع</a></li>
+                        <li><a href="#" class="doctor">You are aDoctor? Join Us</a></li>
+                        <li>
+                            <button type="button" class="doctor btn btn-secondary dropdown-toggle btn-sm"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="background-color: transparent; border: none; margin-bottom: 3px !important;">
+                                <i class="fas fa-user"></i>
+                            </button>
+                            <div class=" dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button"><a href="">My Profile</a></button>
+                                <button class="dropdown-item" type="button"><a
+                                        href="reservation-history.html">Reservation</a> </button>
+                                <button class="dropdown-item" type="button"><a href="">Logout</a></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ends Of Upper Bar -->
+    <!--Start OF  Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="main-media" src="assets/imges/BEWELL-RESIZE-logo.png" alt="Balsamee Logo">
+                <img class="media" src="assets/imges/bcamhs-icon.png">
+            </a>
+            <!--Media Query Navbar -->
+            <div class="contact-media-nav">
+                <a href="#">ع</a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+                <a href="#"> <i class="fas fa-user"></i></a>
+                <a href="#">Login</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">
+                            <img src="assets/imges/navbar/bcamhs-icon.png">
+                            Booking
+                        </a>
+                    </li>
+                    <a class="nav-link" href="#">
+                        <img src="assets/imges/navbar/findDoc.png">
+                        Home Visit
+                    </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/mediSrv.png">
+                            Nearby Medical Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/heaTip.png">
+                            Health Tips
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/navbar/video-icon.png">
+                            Tele-Medicine
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link doc-media" href="#">
+                            <img src="assets/imges/video-icon.png">
+                            Requset a video call doctor
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link doc-media" href="#">
+                            <img src="assets/imges/doctor.png">
+                            You are Doctor? Join Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End  Navbar-->
+
+    <!--------------------------------------------------- Radiology page Content ------------------------------------------------------------------->
+    <div class="human ">
+        <div class="container">
+            <div class="row ">
+                <ul class="switch-card">
+                    <li data-class="tab-mal-face" class="selected">Male Face</li>
+                    <li data-class="tab-mal-back" class="">Male Back</li>
+                    <li data-class="tab-fem-face" class="">Female Face</li>
+                    <li data-class="tab-fem-back" class="">Female Back</li>
+                </ul>
+            </div>
+            <div class="row human-card-content ">
+                <div class="col-md-4 col-sm-12 tab-mal-face ">
+                    <!--START OF CARD-->
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Avatar</h4>
+                        </div>
+                        <div class="card-body" style="margin: 0px auto;">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <table width="207" height="409" border="0" align="center" cellpadding="0"
+                                        cellspacing="0" id="Table_01" style="line-height: 0px;">
+                                        <!--HUAMAN-HEAD-->
+                                        <tr>
+                                            <td></td>
+                                            <td colspan="2">
+                                                <a class="human-head">
+                                                    <img src="images/avatar_canvas_02.png" width="84" height="65" alt=""
+                                                        id="head">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/avatar_canvas_03.png" width="61" height="65" alt="">
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="65" alt="">
+                                            </td>
+                                        </tr>
+                                        <!--HUAMAN-right,left ARM & HUMAN CHEST-->
+                                        <tr>
+                                            <td rowspan="4">
+                                                <a class="human-arm">
+                                                    <img src="images/avatar_canvas_04.png" width="61" height="173"
+                                                        alt="" id="left_arm">
+                                                </a>
+                                            </td>
+                                            <td colspan="2">
+                                                <a class="human-chest">
+                                                    <img src="images/avatar_canvas_05.png" width="84" height="51" alt=""
+                                                        id="chest">
+                                                </a>
+                                            </td>
+                                            <td rowspan="4">
+                                                <a class="human-arm">
+                                                    <img src="images/avatar_canvas_06.png" width="61" height="173"
+                                                        alt="" id="right_arm">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="51" alt="">
+                                            </td>
+                                        </tr>
+                                        <!--HUAMAN-GIT& HUMAN reproductive_system-->
+                                        <tr>
+                                            <td colspan="2">
+                                                <a class="human-git">
+                                                    <img src="images/avatar_canvas_07.png" width="84" height="64" alt=""
+                                                        id="git">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="64" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <a class="human-git">
+                                                    <img src="images/avatar_canvas_08.png" width="84" height="34" alt=""
+                                                        id="reproductive_system">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="34" alt="">
+                                            </td>
+                                        </tr>
+                                        <!--HUAMAN-right,left leg -->
+                                        <tr>
+                                            <td rowspan="2">
+                                                <a class="human-leg">
+                                                    <img src="images/avatar_canvas_09.png" width="42" height="195"
+                                                        alt="" id="left_leg">
+                                                </a>
+                                            </td>
+                                            <td rowspan="2">
+                                                <a class="human-leg">
+                                                    <img src="images/avatar_canvas_10.png" width="42" height="195"
+                                                        alt="" id="right_leg">
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="24" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="images/avatar_canvas_11.png" width="61" height="171" alt="">
+                                            </td>
+                                            <td>
+                                                <img src="images/avatar_canvas_12.jpg" width="61" height="171" alt="">
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="171" alt="">
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-12 tab-mal-back ">
+                    <!--START OF card-->
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Avatar</h4>
+                        </div>
+                        <div class="card-body" style="margin: 0px auto;">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <table width="207" height="413" border="0" align="center" cellpadding="0"
+                                        cellspacing="0" id="Table_01" style="line-height: 0px;">
+                                        <tr>
+                                            <td colspan="2">
+                                                <img src="images/male_back_01.png" width="83" height="55" alt="" />
+                                            </td>
+                                            <td colspan="4">
+                                                <a class="human-head">
+                                                    <img src="images/male_back_02.png" width="44" height="55" alt="" />
+                                                </a>
+                                            </td>
+                                            <td colspan="2">
+                                                <img src="images/male_back_03.png" width="79" height="55" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="55" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">
+                                                <a class="human-arm">
+                                                    <img src="images/male_back_04.png" width="62" height="186" alt=""
+                                                        id="left_arm" />
+                                                </a>
+                                            </td>
+                                            <td colspan="2">
+                                                <a>
+                                                    <img src="images/male_back_05.png" width="35" height="166" alt=""
+                                                        id="Musculoskeletal_left" />
+                                                </a>
+                                            </td>
+                                            <td colspan="2">
+                                                <a>
+                                                    <img src="images/male_back_06.png" width="17" height="166" alt=""
+                                                        id="spine" />
+                                                </a>
+                                            </td>
+                                            <td colspan="2">
+                                                <a class="human-chest">
+                                                    <img src="images/male_back_07.png" width="34" height="166" alt=""
+                                                        id="Musculoskeletal_right" />
+                                                </a>
+                                            </td>
+                                            <td rowspan="2">
+                                                <a class="human-arm">
+                                                    <img src="images/male_back_08.png" width="58" height="186" alt=""
+                                                        id="right_arm" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="166" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" rowspan="2">
+                                                <a class="human-leg">
+                                                    <img src="images/male_back_09.png" width="43" height="191" alt=""
+                                                        id="left_leg" />
+                                                </a>
+                                            </td>
+                                            <td colspan="3" rowspan="2">
+                                                <a class="human-leg">
+                                                    <img src="images/male_back_10.png" width="43" height="191" alt=""
+                                                        id="right_leg" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="20" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="images/male_back_11.png" width="62" height="171" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/male_back_12.png" width="58" height="171" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="171" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="images/spacer.gif" width="62" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="21" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="14" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="8" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="9" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="13" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="21" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="58" height="1" alt="" />
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-sm-12 tab-fem-face ">
+                    <!--START OF CARD-->
+                    <div class="card ">
+                        <div class="card-header">
+                            <h4>Avatar</h4>
+                        </div>
+                        <div class="card-body" style="margin: 0px auto;">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <table width="207" height="412" border="0" align="center" cellpadding="0"
+                                        cellspacing="0" id="Table_01" style="line-height: 0px;">
+                                        <tr>
+                                            <td colspan="2">
+                                                <img src="images/female_face_01.png" width="73" height="68" alt="" />
+                                            </td>
+                                            <td colspan="2">
+                                                <a class="human-head">
+                                                    <img src="images/female_face_02.png" width="64" height="68" alt=""
+                                                        id="head" />
+                                                </a>
+                                            </td>
+                                            <td colspan="2">
+                                                <img src="images/female_face_03.png" width="69" height="68" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="68" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4">
+                                                <a class="human-arm">
+                                                    <img src="images/female_face_04.png" width="64" height="171" alt=""
+                                                        id="left_arm" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/female_face_05.png" width="9" height="52" alt="" />
+                                            </td>
+                                            <td colspan="2">
+                                                <a class="human-chest">
+                                                    <img src="images/female_face_06.png" width="64" height="52" alt=""
+                                                        id="chest" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/female_face_07.png" width="8" height="52" alt="" />
+                                            </td>
+                                            <td rowspan="4">
+                                                <a class="human-arm">
+                                                    <img src="images/female_face_08.png" width="61" height="171" alt=""
+                                                        id="right_arm" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="52" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="images/female_face_09.png" width="9" height="50" alt="" />
+                                            </td>
+                                            <td colspan="2">
+                                                <a class="human-git">
+                                                    <img src="images/female_face_10.png" width="64" height="50" alt=""
+                                                        id="git" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/female_face_11.png" width="8" height="50" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="50" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <a>
+                                                    <img src="images/female_face_12.png" width="81" height="42" alt=""
+                                                        id="reproductive_system" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="42" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" rowspan="2">
+                                                <a class="human-leg">
+                                                    <img src="images/female_face_13.png" width="40" height="199" alt=""
+                                                        id="left_leg" />
+                                                </a>
+                                            </td>
+                                            <td colspan="2" rowspan="2">
+                                                <a class="human-leg">
+                                                    <img src="images/female_face_14.png" width="41" height="199" alt=""
+                                                        id="right_leg" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="27" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="images/female_face_15.png" width="64" height="172" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/female_face_16.png" width="61" height="172" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="172" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="images/spacer.gif" width="64" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="9" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="31" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="33" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="8" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="61" height="1" alt="" />
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 tab-fem-back ">
+                    <div class="card ">
+                        <div class="card-header">
+                            <h4>Avatar</h4>
+                        </div>
+                        <div class="card-body" style="margin: 0px auto;">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <table width="207" height="412" border="0" align="center" cellpadding="0"
+                                        cellspacing="0" id="Table_01" style="line-height: 0px;">
+                                        <tr>
+                                            <td colspan="3">
+                                                <img src="images/female_back_01.png" ) width="80" height="65" alt="" />
+                                            </td>
+                                            <td colspan="4">
+                                                <a class="human-head">
+                                                    <img src="images/female_back_02.png" width="45" height="65"
+                                                        id="head" />
+                                                </a>
+                                            </td>
+                                            <td colspan="3">
+                                                <img src="images/female_back_03.png" width="81" height="65" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="65" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">
+                                                <a class="human-arm">
+                                                    <img src="images/female_back_04.png" width="61" height="173" alt=""
+                                                        id="left_arm" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/female_back_05.png" width="9" height="160" alt="" />
+                                            </td>
+                                            <td colspan="2">
+                                                <a class="human-arm">
+                                                    <img src="images/female_back_06.png" width="20" height="160" alt=""
+                                                        id="Musculoskeletal_left" />
+                                                </a>
+                                            </td>
+                                            <td colspan="2">
+                                                <a class="human-git">
+                                                    <img src="images/female_back_07.png" width="24" height="160" alt=""
+                                                        id="spine" />
+                                                </a>
+                                            </td>
+                                            <td colspan="2">
+                                                <a class="human-arm">
+                                                    <img src="images/female_back_08.png" width="21" height="160" alt=""
+                                                        id="Musculoskeletal_right" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/female_back_09.png" width="9" height="160" alt="" />
+                                            </td>
+                                            <td rowspan="2">
+                                                <a class="human-arm">
+                                                    <img src="images/female_back_10.png" width="62" height="173" alt=""
+                                                        id="right_arm" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="160" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" rowspan="2">
+                                                <a class="human-arm">
+                                                    <img src="images/female_back_11.png" width="42" height="186" alt=""
+                                                        id="left_leg" />
+                                                </a>
+                                            </td>
+                                            <td colspan="4" rowspan="2">
+                                                <a class="human-arm">
+                                                    <img src="images/female_back_12.png" width="41" height="186" alt=""
+                                                        id="right_leg" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="13" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="images/female_back_13.png" width="61" height="173" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/female_back_14.png" width="62" height="173" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="1" height="173" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="images/spacer.gif" width="61" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="9" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="10" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="10" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="13" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="11" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="11" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="10" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="9" height="1" alt="" />
+                                            </td>
+                                            <td>
+                                                <img src="images/spacer.gif" width="62" height="1" alt="" />
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!--ACRList-->
+                <div class="col-md-4 col-sm-12  show-human-head ">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="col-md-11" style="margin-top:4px; margin-bottom:4px;">
+                                <a title="FACE and NECK">
+                                    <img src="images/icons/FACE and NECK.jpg" width="30" height="30"
+                                        class="pull-left img-circle img-thumbnail MarginRight">
+                                </a>
+                                <a>
+                                    <img src="images/icons/SKULL and CONTENTS.jpg" width="30" height="30"
+                                        class="pull-left img-circle img-thumbnail MarginRight">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body scroll">
+                            <div class="col-md-12 ">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href=""><span>FACE and NECK - Normal</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>FACE and NECK - Congenital</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""> <span>FACE and NECK - Inflammatory</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>FACE and NECK - Neoplastic</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>FACE and NECK - Traumatic</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>SKULL and CONTENTS - Normal</span></a> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>SKULL and CONTENTS - Congenital</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>SKULL and CONTENTS - Inflammatory</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>SKULL and CONTENTS - Traumatic</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>SKULL and CONTENTS - Vascular</span> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12  show-human-chest ">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="col-md-11" style="margin-top:4px; margin-bottom:4px;">
+                                <a title="FACE and NECK">
+                                    <img src="images/icons/chest.jpg" width="30" height="30"
+                                        class="pull-left img-circle img-thumbnail MarginRight">
+                                </a>
+                                <a>
+                                    <img src="images/icons/HEART and GREAT VESSELS.jpg" width="30" height="30"
+                                        class="pull-left img-circle img-thumbnail MarginRight">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body scroll">
+                            <div class="col-md-12 column">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href=""><span>CHEST - Normal</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>CHEST - Congenital</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""> <span>CHEST - Inflammatory</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>CHEST - Neoplastic</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>CHEST - Traumatic</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>CHEST - Pleura</span></a> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>CHEST - Airway</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>CHEST - Interstitial Disease</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>CHEST - Chest Wall</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>HEART and GREAT VESSELS - Normal</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>HEART and GREAT VESSELS - Congenital</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>HEART and GREAT VESSELS - Inflammatory</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>HEART and GREAT VESSELS - Neoplastic</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>HEART and GREAT VESSELS - Traumatic</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12  show-human-arm ">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="col-md-11" style="margin-top:4px; margin-bottom:4px;">
+                                <a href="" title="FACE and NECK">
+                                    <img src="images/icons/Musculoskeletal.jpg" width="30" height="30"
+                                        class="pull-left img-circle img-thumbnail MarginRight">
+                                </a>
+                                <a href="" title="SKULL and CONTENTS">
+                                    <img src="images/icons/VASCULAR and LYMPHATICS.jpg" width="30" height="30"
+                                        class=" img-circle img-thumbnail ">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body scroll">
+                            <div class="col-md-12 ">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href=""><span>MUSCULOSKELETAL - Normal</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>MUSCULOSKELETAL - Congenital</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""> <span>MUSCULOSKELETAL - Inflammatory</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>MUSCULOSKELETAL - Neoplastic</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>MUSCULOSKELETAL - Traumatic</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>MUSCULOSKELETAL - Metabolic</span></a> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>VASCULAR and LYMPHATICS - Normal</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>VASCULAR and LYMPHATICS - Congenital</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>VASCULAR and LYMPHATICS - Inflammatory</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>VASCULAR and LYMPHATICS - Neoplastic</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>VASCULAR and LYMPHATICS - Traumatic</span> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12  show-human-leg ">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="col-md-11" style="margin-top:4px; margin-bottom:4px;">
+                                <a href="" title="FACE and NECK">
+                                    <img src="images/icons/Musculoskeletal.jpg" width="30" height="30"
+                                        class="pull-left img-circle img-thumbnail MarginRight">
+                                </a>
+                                <a href="" title="SKULL and CONTENTS">
+                                    <img src="images/icons/VASCULAR and LYMPHATICS.jpg" width="30" height="30"
+                                        class=" img-circle img-thumbnail ">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body scroll">
+                            <div class="col-md-12 ">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href=""><span>MUSCULOSKELETAL - Normal</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>MUSCULOSKELETAL - Congenital</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""> <span>MUSCULOSKELETAL - Inflammatory</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>MUSCULOSKELETAL - Neoplastic</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>MUSCULOSKELETAL - Traumatic</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>MUSCULOSKELETAL - Metabolic</span></a> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>VASCULAR and LYMPHATICS - Normal</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>VASCULAR and LYMPHATICS - Congenital</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>VASCULAR and LYMPHATICS - Inflammatory</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>VASCULAR and LYMPHATICS - Neoplastic</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>VASCULAR and LYMPHATICS - Traumatic</span> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12  show-human-git ">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="col-md-11" style="margin-top:4px; margin-bottom:4px;">
+                                <a title="FACE and NECK">
+                                    <img src="images/icons/git.jpg" width="30" height="30"
+                                        class="pull-left img-circle img-thumbnail MarginRight">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body scroll">
+                            <div class="col-md-12 ">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href=""><span>GIT - Normal</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>GIT - Congenital</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""> <span>GIT - Inflammatory</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>GIT - Neoplastic</span></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>GIT - Traumatic</span> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>GIT - Metabolic</span></a> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><span>GIT Liver,Inflammatory</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="main labs">
+        <div class="container">
+            <div class="row">
+                <!--labs request-->
+                <div class="col-md-7 col-xs-12 labs-card">
+                    <h5>Radiology Request Form</h5>
+                    <p style="width: 85%;">Now you can order a home visit from the nearest branch of Alfa Labs to your
+                        place of choice. </p>
+                    <div class="dropdown-divider"></div>
+                    <form>
+                        <div class="form-group">
+                            <h6>Attach Doctor's Note </h6>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                            <!-- <input type="file" class="form-control-file" value="attach File"> -->
+                        </div>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                        <div class="collapse-toggle">
+                            <!--Collapse first  row-->
+                            <div class="row">
+                                <div class="col-6 ">
+                                    <p>
+                                        <button class="btn btn-secondary from-control " type="button"
+                                            data-toggle="collapse" data-target="#labs-expand" aria-expanded="false"
+                                            aria-controls="labs-expand">
+                                            ULTRASOUND <i class="fas fa-angle-down"></i>
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="labs-expand">
+                                        <div class="card card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">G2000</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">DFS</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">GTq</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">RFT</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <p>
+                                        <button class="btn btn-secondary from-control " type="button"
+                                            data-toggle="collapse" data-target="#labs-radiology" aria-expanded="false"
+                                            aria-controls="labs-radiology">
+                                            CT<i class="fas fa-angle-down"></i>
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="labs-radiology">
+                                        <div class="card card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">CEA</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">AFP</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">PSA</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">HBsAg</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Collapse Second  row-->
+                            <div class="row">
+                                <div class="col-6  ">
+                                    <p>
+                                        <button class="btn btn-secondary from-control " type="button"
+                                            data-toggle="collapse" data-target="#hematology-expand"
+                                            aria-expanded="false" aria-controls="hematology-expand">
+                                            X-RAY <i class="fas fa-angle-down"></i>
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="hematology-expand">
+                                        <div class="card card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">G2000</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">DFS</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">GTq</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">RFT</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <p>
+                                        <button class="btn btn-secondary from-control " type="button"
+                                            data-toggle="collapse" data-target="#microbiology-radiology"
+                                            aria-expanded="false" aria-controls="microbiology-radiology">
+                                            MRI<i class="fas fa-angle-down"></i>
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="microbiology-radiology">
+                                        <div class="card card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">CEA</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">AFP</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">PSA</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input position-static" type="checkbox"
+                                                            id="blankCheckbox" value="option1" aria-label="...">
+                                                        <label class="form-check-label" for="inlineRadio1">HBsAg</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-divider"></div>
+                        <!--home visit information Section -->
+                        <div class="home-visit">
+                            <h5>Home visit information</h5>
+                            <!--------------------------DATE TIME ------------------------------>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="">Preferred Visit Date</label>
+                                        <input type="text" class="form-control" autocomplete="off"
+                                            name="lab_request[preferred_datetime]" id="lab_request_preferred_datetime"
+                                            placeholder=" Your visit Date" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Preferred Visit Time</label>
+                                        <input type="text" class="form-control" autocomplete="off"
+                                            name="lab_request[preferred_time]" id="lab_request_preferred_time"
+                                            placeholder="Your visit time" required>
+                                    </div>
+                                    <!-- <div class="form-group col-md-3">
+                                        <label for="">Time/Period</label>
+                                        <select name="" class="form-control" name="lab_request[preferred_period]"
+                                            id="lab_request_preferred_period" autocomplete="off" required>
+                                            <option value=""></option>
+                                            <option value="pm">am</option>
+                                            <option value="am">pm</option>
+                                        </select>
+                                    </div> -->
+                                </div>
+                                <!----------------------lABS Cities---------------------------->
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="">Your City</label>
+                                        <select class="form-control form-control-lg" name="lab_request[patient_city]"
+                                            id="lab_request_patient_city" autocomplete="off" required>
+                                            <option value=""></option>
+                                            <option value="Cairo">Cairo</option>
+                                            <option value="Giza">Giza</option>
+                                        </select>
+                                    </div>
+                                    <!----------------------------lABS aREAS------------------------>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Your Area</label>
+                                        <select class="form-control form-control-lg" name="lab_request[patient_area]"
+                                            id="lab_request_patient_area" autocomplete="off" required >
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--phone number and Address-->
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="address">Your Address</label>
+                                        <input class=" address form-control form-control-lg" type="text"
+                                            name="lab_request[patient_address]" id="lab_request_patient_address"
+                                            placeholder="Enter Your Address" autocomplete="off" required />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Phone Number</label>
+                                        <input class=" phonenumber  form-control form-control-lg" value="" type="number"
+                                            name="lab_request[patient_phone]" id="lab_request_patient_phone"
+                                            placeholder="01xxxxxxxxx" autocomplete="off" required />
+                                    </div>
+                                </div>
+                                <!------------------------LABS BRANCHES--------------------------->
+                                <div class="form-row">
+                                    <div class="form-group col-md">
+                                        <label for="address">Lab Branch</label>
+                                        <select class="form-control " name="lab_request[branch]"
+                                            id="lab_request_branch" autocomplete="off" >
+                                        </select>
+                                        <small>Optional</small>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Additional info</label>
+                                    <textarea class="form-control form-control-lg" placeholder="Additional info"
+                                        name="lab_request[additional_notes]" id="lab_request_additional_notes" rows="5"
+                                        required>
+                                    </textarea>
+                                </div>
+                                <input type="submit" name="commit" value="Submit" class="btn btn-info" />
+                            </form>
+                        </div>
+                </div>
+                <!--l-----------------------Labs request Details-------------------->
+                <div class="col-md-4 col-xs-12 labs-card ">
+                    <h4>Selected Examinations</h4>
+                    <div class="lab-information">
+                        <div id="div_lab_group_12">
+                        </div>
+                        <br />
+                        <div id="div_lab_group_15">
+                        </div>
+                    </div>
+                    <div class="home-visit-information">
+                        <span id="selected_date"></span>
+                        <span id="selected_time"></span>
+                        <span id="selected_period"></span>
+                        <span class="citycla"></span>
+                        <span class="areacla"></span>
+                        <span class="branchcla"></span>
+                        <span class="addressResult "></span>
+                        <span class="phone-number "></span>
+                        <span class="textarea"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!---------------------------------------------- end upper footer------------------------------------------------------------------->
+
+    <div class="upper-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 ">
+                    <a class="footer-logo" href="https://booking-staging.balsamee.com/">
+                        <img src="assets/imges/logo45white@2x.png">
+                    </a>
+                    <p class="text-white-50">BeWell offers solutions for all specialties and healthcare providers
+                    </p>
+                    <div class="social-icon">
+                        <a href="https://www.twitter.com/balsamee_ltd?lang=en"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/balsamee/"><i class="fab fa-facebook-f "></i></a>
+                        <a href="https://instagram.com/balsamee.app?igshid=40h4jztlb6n9"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/balsamee"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="https://apps.apple.com/gb/app/balsamee/id1097418150">
+                        <img src="assets/imges/footer/apple-store.png">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.nabdacare.nabdanet&hl=en">
+
+                        <img src="assets/imges/footer/google-play-store.png">
+                    </a>
+                </div>
+
+
+                <div class="col-md-2 col-xs-12">
+                    <h5>Booking</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://balsamee.com/visiting-doctor?lang=en">Doctor</a></li>
+                        <li><a href="https://balsamee.com/medical-services?lang=en">Clinics</a></li>
+                        <li><a href="https://balsamee.com/camhs?lang=en">Specialties</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">Labs</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">radiology</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="">Booking</a></li>
+                        <li><a href="https://balsamee.com/visiting-doctor?lang=en">Home Visit</a></li>
+                        <li><a href="https://balsamee.com/medical-services?lang=en">Nearby Medical Services</a></li>
+                        <li><a href="https://balsamee.com/camhs?lang=en">BCAHMS</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">Health Tips</a></li>
+                        <li><a href="https://balsamee.com/cross-border-treatments/international/search?lang=en">Cross
+                                Border Treatment</a></li>
+                        <li><a href="https://balsamee.com/video-call?lang=en">Tele-Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12 ">
+                    <h5>Contact US</h5>
+                    <ul class="list-unstyled contactus">
+                        <li>
+                            <h6>UK (Head Office)</h6>
+                        </li>
+                        <p>Regus House, Falcon Drive, Cardiff bay,
+                            Cardiff, UK,
+                            CF10 4 RU</p>
+                        <li><strong><i class="fas fa-phone-alt"></i></strong>(+44)2922677250</li>
+                        <li><strong><i class="fas fa-fax"></i></strong>(+44)2920504001</li>
+                        <div class="egy-address">
+                            <li><strong>
+                                    <h6>Egypt</h6>
+                            </li>
+                            <p>14, Waleed Bin Thanian Al Saoud, Block 1163,
+                                Sheraton, Heliopolis, Cairo,Egypt</p>
+                            <li><strong><i class="fas fa-phone-alt"></i></strong><span>(+20)1125000026</span></li>
+                            <li><strong><i class="fas fa-fax"></i></strong><span>(+20)222695640</span></li>
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p class=""><small class="text-white-50">BeWell © 2019. All Rights Reserved.</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------------------end of footer-------------------------------------->
+    <!--js Libraries-->
+    <script src="js/jquery.js"></script>
+    <script src="js/poppper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

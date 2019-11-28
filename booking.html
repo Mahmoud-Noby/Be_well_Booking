@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BeWell Portal </title>
+    <link rel='icon' type="image/png" href="assets/imges/bewell-favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Start Of Upper Bar -->
+    <div class="upper-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col contact">
+                    <a href="contact-us.html"><i class="fas fa-phone-alt"></i></a>
+                    <a href="contact-us.html"> Contact Us </a>
+                </div>
+                <div class="col-sm-10 ml-auto">
+                    <ul class="auth-area">
+                        <li> <a href="#" class="lang"> ع</a></li>
+                        <li><a href="#" class="doctor">You are aDoctor? Join Us</a></li>
+                        <li>
+                            <button type="button" class="doctor btn btn-secondary dropdown-toggle btn-sm"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="background-color: transparent; border: none; margin-bottom: 3px !important;">
+                                <i class="fas fa-user"></i>
+                            </button>
+                            <div class=" dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button"><a href="">My Profile</a></button>
+                                <button class="dropdown-item" type="button"><a
+                                        href="reservation-history.html">Reservation</a> </button>
+                                <button class="dropdown-item" type="button"><a href="">Logout</a></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ends Of Upper Bar -->
+    <!--Start OF  Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="main-media" src="assets/imges/BEWELL-RESIZE-logo.png"
+                    alt="Balsamee Logo">
+                <img class="media" src="assets/imges/bcamhs-icon.png">
+            </a>
+            <!--Media Query Navbar -->
+            <div class="contact-media-nav">
+                <a href="#">ع</a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+                <a href="#"> <i class="fas fa-user"></i></a>
+                <a href="#">Login</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">
+                            <img src="assets/imges/navbar/bcamhs-icon.png">
+                            Booking
+                        </a>
+                    </li>
+                    <a class="nav-link" href="#">
+                        <img src="assets/imges/navbar/findDoc.png">
+                        Home Visit
+                    </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/mediSrv.png">
+                            Nearby Medical Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/heaTip.png">
+                            Health Tips
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/navbar/video-icon.png">
+                            Tele-Medicine
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link doc-media" href="#">
+                            <img src="assets/imges/video-icon.png">
+                            Requset a video call doctor
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link doc-media" href="#">
+                            <img src="assets/imges/doctor.png">
+                            You are Doctor? Join Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End  Navbar-->
+
+    <!--Start Doctors Area -->
+    <div class="main">
+        <div class="filtering">
+            <div class="container-fluid">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-8 col-sm-12">
+                        <h4>Quickly find medical services near you and make an appointment online in just a few clicks
+                        </h4>
+                    </div>
+                    <div class="col-md-8 col-sm-12  general-search">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder=" Doctor  |  Clinic  |  Specialty">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-warning " type="submit">
+                                        Search
+                                    </button>
+                                </div>
+                                <button class="btn btn-primary form-control " type="submit">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class='new-services' id='services'>
+                    <div class='row justify-content-between' >
+                        <div class='col-md-2 text-center'>
+                            <div class='service-item'>
+                                <i class='service-icon fa fa-stethoscope'></i>
+                                <h5>Doctors</h5>
+                                <p> Find the most convenient and professional Doctors.</p>
+                                <a href="doctors.html">See More</a>
+                            </div>
+                        </div>
+
+                        <div class='col-md-2 text-center'>
+                            <div class='service-item'>
+                                <i class="service-icon  far fa-hospital"></i></i>
+                                <h5>Clinics</h5>
+                                <p>Find the nearest Clinic around to suit your needs.</p>
+                                <a href="clinics.html">See More</a>
+                            </div>
+                        </div>
+                        <div class='col-md-2 text-center'>
+                            <div class='service-item'>
+                                <i class="service-icon  fas fa-book-medical"></i>
+                                <h5>Specialties</h5>
+                                <p> Find the best specialists in the field you're seeking.</p>
+                                <a href="specialties.html">See More</a>
+                            </div>
+                        </div>
+                        <div class='col-md-2 text-center'>
+                            <div class='service-item'>
+                                <i class='service-icon'>
+                                    <!-- %img{height: "56", src: "assets/lab_icon.png", style: "margin-top:-12px;", width: "38"}/ -->
+                                    <img alt="Lab icon" height="56"
+                                        src="assets/imges/lab_icon-9ff11dd9638e3c71bb93a90c6471a99e.png"
+                                        style="margin-top:-12px;" width="38" />
+                                </i>
+                                <h5>Labs</h5>
+                                <p> Book a Home visit of our Lab to take a sample.</p>
+                                <a href="labs.html">See More</a>
+                            </div>
+                        </div>
+                        <div class='col-md-2 text-center'>
+                            <div class='service-item'>
+                                <i class='service-icon fas fa-x-ray'></i>
+                                <h5>Radiology</h5>
+                                <p> Book your place at the best scan centers.</p>
+                                <a href="radiology.html">See More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!------------------------------------------bewell app section------------------------------------------------------------------------>
+        <div class="bewell-app">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-12 mobile-app">
+                        <img src="assets/imges/Group 112.png">
+                    </div>
+                    <div class="col-md-7 col-sm-12 mobile-app-desc">
+                        <h1>Get Balsamee app.</h1>
+                        <ul>
+                            <li>Find nearby doctors in your network</li>
+                            <li>Browse medical services: Clinics, Labs and Radiology</li>
+                            <li>Book appointments with a tap of your finger</li>
+                        </ul>
+                        <div class="send-app-link">
+                            <form>
+                                <label for=""> Send me a link to the app </label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="0123546987">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-warning  form-control " type="submit">
+                                            Send link
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <a href="https://apps.apple.com/gb/app/balsamee/id1097418150">
+                                <img src="assets/imges/apple-store.png">
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.nabdacare.nabdanet&hl=en">
+
+                                <img src="assets/imges/google-play-store.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-12 mobile-app-query">
+                        <img src="assets/imges/Group 112.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------Are You Good-doctor------------------------------------------------------------------------>
+    <div class="a-good-doc">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-lg-7 col-md-12 doc-quest">
+                    <h1>Are you a doctor or healthcare provider?</h1>
+                    <h4>List your services to millions of patients.</h4>
+                    <ul>
+                        <li>Reach and engage with your patients</li>
+                        <li>Control your online image & reputation</li>
+                        <li>Help your patients in their medical journey.</li>
+                    </ul>
+                    <button class="btn btn-warning  form-control " type="submit">
+                        list your services on BeWell
+                    </button>
+                </div>
+                <div class="col-lg-5 col-md-12 doc-img">
+                    <img src="assets/imges/categories/good-doctor.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------Partener ------------------------------------------------------------------------>
+    <div class="partners">
+        <div class="container-fluid ">
+            <div class="row ">
+                <div class="col-lg-6 col-sm-12 part-desc">
+                    <h1>Help your patients when trying to access your care.</h1>
+                    <h4>List your services to reach millions of patients.</h4>
+                    <button class="btn btn-warning  form-control " type="submit">
+                        join us & become a partner
+                    </button>
+                </div>
+                <div class="col-lg-6 col-sm-12 parterns-img text-center">
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6  col-xs-6 wide-logo">
+
+                            <a href="https://www.vodafone.co.uk/mobile/vodafone-techstarter_top50">
+                                <img src="assets/imges/partners/Group 114.png">
+                            </a>
+                            <a href="https://cyberwales.net/en/"> <img
+                                    src="assets/imges/partners/01.png"></a>
+                            <a href="https://cwmtafmorgannwg.wales/"> <img
+                                    src="assets/imges/partners/02.png"></a>
+                            <a href="https://www.gov.uk/government/organisations/innovate-uk"> <img
+                                    src="assets/imges/partners/03.png"></a>
+                            <a href="https://gtr.ukri.org/projects?ref=102989"> <img
+                                    src="assets/imges/partners/Mediwales.png"></a>
+                            <a href="http://www.usenghor-francophonie.org/"> <img
+                                    src="assets/imges/partners/05.png"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 squar-logo">
+                            <a href="https://www.alfascan.com.eg/index.htm">
+                                <img src="assets/imges/partners/logo.png">
+                            </a>
+                            <a href="https://www.alfalaboratory.com/">
+                                <img src="assets/imges/partners/icon.png">
+                            </a>
+                            <a href="https://lshubwales.com/dhew">
+                                <img src="assets/imges/partners/6.png">
+                            </a>
+                            <a class="elsafa-clinic"
+                                href="https://www.facebook.com/pg/Safa-Clinics-Sheikh-Zayed-1219448478150052/about/?ref=page_internal">
+                                <img src="assets/imges/partners/8.png">
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------Partener ------------------------------------------------------------------------>
+
+
+
+    <div class="services">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <h1>BeWell offers solutions for all specialties and healthcare providers.</h1>
+                    <h4>Discover our solutions to enhance your business.<h4>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <h5>Communicate with your patients.</h5>
+                        <p>Simply communicate through our app and patient portal by SMS and email with your patients.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <h5>Marketing your practice. </h5>
+                        <p>Communicate online about your services and your expertise.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <h5>Online agenda</h5>
+                        <p>Make use of our intelligent and comprehensive consultation management software</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <h5>Make an online appointment for your patients</h5>
+                        <p>Offer an appointment online 24 hours a day, 7 days a week, which helps you manage your
+                            services</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <h5>Coordination of care</h5>
+                        <p>Refer or receive patients in 1 click and exchange with your colleagues</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <h5>Help your patients honor their appointments </h5>
+                        <p>Reduce your No Show appointments with BeWell tools</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------start upper footer------------------------------------------------->
+    <div class="upper-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 ">
+                    <a class="footer-logo" href="https://booking-staging.balsamee.com/">
+                        <img src="assets/imges/logo45white@2x.png">
+                    </a>
+                    <p class="text-white-50">BeWell offers solutions for all specialties and healthcare providers</p>
+                    <div class="social-icon">
+                        <a href="https://www.twitter.com/balsamee_ltd?lang=en"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/balsamee/"><i class="fab fa-facebook-f "></i></a>
+                        <a href="https://instagram.com/balsamee.app?igshid=40h4jztlb6n9"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/balsamee"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="https://apps.apple.com/gb/app/balsamee/id1097418150">
+                        <img src="assets/imges/footer/apple-store.png">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.nabdacare.nabdanet&hl=en">
+
+                        <img src="assets/imges/footer/google-play-store.png">
+                    </a>
+                </div>
+
+
+                <div class="col-md-2 col-xs-12">
+                    <h5>Booking</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://balsamee.com/visiting-doctor?lang=en">Doctor</a></li>
+                        <li><a href="https://balsamee.com/medical-services?lang=en">Clinics</a></li>
+                        <li><a href="https://balsamee.com/camhs?lang=en">Specialties</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">Labs</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">radiology</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="">Booking</a></li>
+                        <li><a href="https://balsamee.com/visiting-doctor?lang=en">Home Visit</a></li>
+                        <li><a href="https://balsamee.com/medical-services?lang=en">Nearby Medical Services</a></li>
+                        <li><a href="https://balsamee.com/camhs?lang=en">BCAHMS</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">Health Tips</a></li>
+                        <li><a href="https://balsamee.com/cross-border-treatments/international/search?lang=en">Cross
+                                Border Treatment</a></li>
+                        <li><a href="https://balsamee.com/video-call?lang=en">Tele-Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12 ">
+                    <h5>Contact US</h5>
+                    <ul class="list-unstyled contactus">
+                        <li>
+                            <h6>UK (Head Office)</h6>
+                        </li>
+                        <p>Regus House, Falcon Drive, Cardiff bay,
+                            Cardiff, UK,
+                            CF10 4 RU</p>
+                        <li><strong><i class="fas fa-phone-alt"></i></strong>(+44)2922677250</li>
+                        <li><strong><i class="fas fa-fax"></i></strong>(+44)2920504001</li>
+                        <div class="egy-address">
+                            <li><strong>
+                                    <h6>Egypt</h6>
+                            </li>
+                            <p>14, Waleed Bin Thanian Al Saoud, Block 1163,
+                                Sheraton, Heliopolis, Cairo,Egypt</p>
+                            <li><strong><i class="fas fa-phone-alt"></i></strong><span>(+20)1125000026</span></li>
+                            <li><strong><i class="fas fa-fax"></i></strong><span>(+20)222695640</span></li>
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p class=""><small class="text-white-50">BeWell © 2019. All Rights Reserved.</small></p>
+                </div>
+            </div>
+        </div>
+    <!--------------------------------------------------------------end of footer-------------------------------------->
+
+        <!--js Libraries-->
+        <script src="js/jquery.js"></script>
+        <script src="js/poppper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>

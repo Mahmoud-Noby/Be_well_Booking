@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BeWell Portal </title>
+    <link rel='icon' type="image/png" href="assets/imges/bewell-favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- date time picker CSS -->
+
+    <link rel="stylesheet" href="js/build/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="labs-bgc">
+    <!-- Start Of Upper Bar -->
+    <div class="upper-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col contact">
+                    <a href="contact-us.html"><i class="fas fa-phone-alt"></i></a>
+                    <a href="contact-us.html"> Contact Us </a>
+                </div>
+                <div class="col-sm-10 ml-auto">
+                    <ul class="auth-area">
+                        <li> <a href="#" class="lang"> ع</a></li>
+                        <li><a href="#" class="doctor">You are aDoctor? Join Us</a></li>
+                        <li>
+                            <button type="button" class="doctor btn btn-secondary dropdown-toggle btn-sm"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="background-color: transparent; border: none; margin-bottom: 3px !important;">
+                                <i class="fas fa-user"></i>
+                            </button>
+                            <div class=" dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button"><a href="">My Profile</a></button>
+                                <button class="dropdown-item" type="button"><a
+                                        href="reservation-history.html">Reservation</a> </button>
+                                <button class="dropdown-item" type="button"><a href="">Logout</a></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ends Of Upper Bar -->
+    <!--Start OF  Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="main-media" src="assets/imges/BEWELL-RESIZE-logo.png" alt="Balsamee Logo">
+                <img class="media" src="assets/imges/bcamhs-icon.png">
+            </a>
+            <!--Media Query Navbar -->
+            <div class="contact-media-nav">
+                <a href="#">ع</a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+                <a href="#"> <i class="fas fa-user"></i></a>
+                <a href="#">Login</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">
+                            <img src="assets/imges/navbar/bcamhs-icon.png">
+                            Booking
+                        </a>
+                    </li>
+                    <a class="nav-link" href="#">
+                        <img src="assets/imges/navbar/findDoc.png">
+                        Home Visit
+                    </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/mediSrv.png">
+                            Nearby Medical Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/heaTip.png">
+                            Health Tips
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="assets/imges/navbar/video-icon.png">
+                            Tele-Medicine
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link doc-media" href="#">
+                            <img src="assets/imges/video-icon.png">
+                            Requset a video call doctor
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link doc-media" href="#">
+                            <img src="assets/imges/doctor.png">
+                            You are Doctor? Join Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End  Navbar-->
+
+
+    <!--------------------------------------------------- Labs page Content ------------------------------------------------------------------->
+    <div class="main labs">
+        <div class="container">
+            <div class="row">
+                <!-----------------------labs request---------------------------->
+                <div class="col-md-7 col-xs-12 labs-card">
+                    <h5>Labs Request Form</h5>
+                    <p style="width: 85%;">Now you can order a home visit from the nearest branch of Alfa Labs to your
+                        place of choice. </p>
+                    <div class="dropdown-divider"></div>
+                    <form>
+                        <div class="form-group">
+                            <h6>Attach Doctor's Note </h6>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                            <!-- <input type="file" class="form-control-file" value="attach File"> -->
+                        </div>
+                    </form>
+                    <div class="dropdown-divider"></div>
+
+                    <div class="collapse-toggle">
+                        <!-- first  row-->
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12" id="lab_group_12">
+                                <p>
+                                    <button class="btn btn-secondary from-control " type="button" data-toggle="collapse"
+                                        data-target="#labs-expand" aria-expanded="false" aria-controls="labs-expand">
+                                        Heamatology <i class="fas fa-angle-down"></i>
+                                    </button>
+                                </p>
+                                <div class="collapse" id="labs-expand">
+                                    <div class="card card-body">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="heamatology" value="G2000"
+                                                        class="lab_test" />
+                                                    <label for="option-G2000">G2000</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="heamatology" value="RFT"
+                                                        class="lab_test" />
+                                                    <label for="option-RFT">RFT</label>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="heamatology" value="DFS"
+                                                        class="lab_test" />
+                                                    <label for="option-DFS">DFS#</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="heamatology" value="GTQ"
+                                                        class="lab_test" />
+                                                    <label for="option-GTQ">GTQ</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12" id="lab_group_15">
+                                <p>
+                                    <button class="btn btn-info from-control " type="button" data-toggle="collapse"
+                                        data-target="#micro" aria-expanded="false" aria-controls="labs-expand">
+                                        MicroBiology <i class="fas fa-angle-down"></i>
+                                    </button>
+                                </p>
+                                <div class="collapse" id="micro">
+                                    <div class="card card-body">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="microBiology" value="CEA"
+                                                        class="lab_test" />
+                                                    <label for="option-CEA">CEA</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="microBiology" value="PSA"
+                                                        class="lab_test" />
+                                                    <label for="option-PSA">PSA</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="microBiology" value="AFP"
+                                                        class="lab_test" />
+                                                    <label for="option-AFP">AFP</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" name="microBiology" value="HBsAg"
+                                                        class="lab_test" />
+                                                    <label for="option-HBsAg">HBsAg</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+
+                    <!--------------------------home visit informa---------------------->
+                    <div class="home-visit">
+                        <h5>Home visit information</h5>
+                        <!--------------------------DATE TIME ------------------------------>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="">Preferred Visit Date</label>
+                                    <input type="text" class="form-control" autocomplete="off"
+                                        name="lab_request[preferred_datetime]" id="lab_request_preferred_datetime"
+                                        placeholder=" Your visit Date" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="">Preferred Visit Time</label>
+                                    <input type="text" class="form-control" autocomplete="off"
+                                        name="lab_request[preferred_time]" id="lab_request_preferred_time"
+                                        placeholder="Your visit time" required>
+                                </div>
+                                <!-- <div class="form-group col-md-3">
+                                    <label for="">Time/Period</label>
+                                    <select name="" class="form-control" name="lab_request[preferred_period]"
+                                        id="lab_request_preferred_period" required>
+                                        <option value=""></option>
+                                        <option value="pm">am</option>
+                                        <option value="am">pm</option>
+                                    </select>
+                                </div> -->
+                            </div>
+                            <!----------------------lABS Cities---------------------------->
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="">Your City</label>
+                                    <select class="form-control form-control-lg" name="lab_request[patient_city]"
+                                        id="lab_request_patient_city" autocomplete="off" required> 
+                                        <option value=""></option>
+                                        <option value="Cairo">Cairo</option>
+                                        <option value="Giza">Giza</option>
+                                    </select>
+                                </div>
+                                <!----------------------------lABS aREAS------------------------>
+                                <div class="form-group col-md-6">
+                                    <label for="">Your Area</label>
+                                    <select class="form-control form-control-lg" name="lab_request[patient_area]"
+                                        id="lab_request_patient_area" autocomplete="off" required>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--phone number and Address-->
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="address">Your Address</label>
+                                    <input class=" address form-control form-control-lg" type="text"
+                                        name="lab_request[patient_address]" id="lab_request_patient_address"
+                                        placeholder="Enter Your Address" autocomplete="off" required />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="">Phone Number</label>
+                                    <input class=" phonenumber  form-control form-control-lg" value="" type="number"
+                                        name="lab_request[patient_phone]" id="lab_request_patient_phone"
+                                        placeholder="01xxxxxxxxx" autocomplete="off" required />
+                                </div>
+                            </div>
+                            <!------------------------LABS BRANCHES--------------------------->
+                            <div class="form-row">
+                                <div class="form-group col-md">
+                                    <label for="address">Lab Branch</label>
+                                    <select class="form-control " name="lab_request[branch]" id="lab_request_branch" autocomplete="off">
+                                    </select>
+                                    <small>Optional</small>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Additional info</label>
+                                <textarea class="form-control " placeholder="Additional notes"
+                                    name="lab_request[additional_notes]" id="lab_request_additional_notes" rows="5"
+                                    autocomplete="off">
+                            </textarea>
+                            </div>
+                            <input type="submit" name="commit" value="Submit" class="btn btn-info" />
+                        </form>
+                    </div>
+                </div>
+                <!--l-----------------------Labs request Details-------------------->
+                <div class="col-md-4 col-xs-12 labs-card ">
+                    <h4>Selected Information</h4>
+                    <div class="lab-information">
+                        <div id="div_lab_group_12">
+                        </div>
+                        <br />
+                        <div id="div_lab_group_15">
+                        </div>
+                    </div>
+                    <div class="home-visit-information">
+                        <span id="selected_date"></span>
+                        <span id="selected_time"></span>
+                        <span id="selected_period"></span>
+                        <span class="citycla"></span>
+                        <span class="areacla"></span>
+                        <span class="branchcla"></span>
+                        <span class="addressResult "></span>
+                        <span class="phone-number "></span>
+                        <span class="textarea"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <!----------------------------------------------start upper footer------------------------------------------------->
+    <div class="upper-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 ">
+                    <a class="footer-logo" href="https://booking-staging.balsamee.com/">
+                        <img src="assets/imges/logo45white@2x.png">
+                    </a>
+                    <p class="text-white-50">BeWell offers solutions for all specialties and healthcare providers</p>
+                    <div class="social-icon">
+                        <a href="https://www.twitter.com/balsamee_ltd?lang=en"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/balsamee/"><i class="fab fa-facebook-f "></i></a>
+                        <a href="https://instagram.com/balsamee.app?igshid=40h4jztlb6n9"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/balsamee"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="https://apps.apple.com/gb/app/balsamee/id1097418150">
+                        <img src="assets/imges/footer/apple-store.png">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.nabdacare.nabdanet&hl=en">
+
+                        <img src="assets/imges/footer/google-play-store.png">
+                    </a>
+                </div>
+
+
+                <div class="col-md-2 col-xs-12">
+                    <h5>Booking</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://balsamee.com/visiting-doctor?lang=en">Doctor</a></li>
+                        <li><a href="https://balsamee.com/medical-services?lang=en">Clinics</a></li>
+                        <li><a href="https://balsamee.com/camhs?lang=en">Specialties</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">Labs</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">radiology</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="">Booking</a></li>
+                        <li><a href="https://balsamee.com/visiting-doctor?lang=en">Home Visit</a></li>
+                        <li><a href="https://balsamee.com/medical-services?lang=en">Nearby Medical Services</a></li>
+                        <li><a href="https://balsamee.com/camhs?lang=en">BCAHMS</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">Health Tips</a></li>
+                        <li><a href="https://balsamee.com/cross-border-treatments/international/search?lang=en">Cross
+                                Border Treatment</a></li>
+                        <li><a href="https://balsamee.com/video-call?lang=en">Tele-Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12 ">
+                    <h5>Contact US</h5>
+                    <ul class="list-unstyled contactus">
+                        <li>
+                            <h6>UK (Head Office)</h6>
+                        </li>
+                        <p>Regus House, Falcon Drive, Cardiff bay,
+                            Cardiff, UK,
+                            CF10 4 RU</p>
+                        <li><strong><i class="fas fa-phone-alt"></i></strong>(+44)2922677250</li>
+                        <li><strong><i class="fas fa-fax"></i></strong>(+44)2920504001</li>
+                        <div class="egy-address">
+                            <li><strong>
+                                    <h6>Egypt</h6>
+                            </li>
+                            <p>14, Waleed Bin Thanian Al Saoud, Block 1163,
+                                Sheraton, Heliopolis, Cairo,Egypt</p>
+                            <li><strong><i class="fas fa-phone-alt"></i></strong><span>(+20)1125000026</span></li>
+                            <li><strong><i class="fas fa-fax"></i></strong><span>(+20)222695640</span></li>
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p class=""><small class="text-white-50">BeWell © 2019. All Rights Reserved.</small></p>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------------------end of footer-------------------------------------->
+
+        <!--js Libraries-->
+        <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+        <script src="js/jquery.js"></script>
+        <script src="js/poppper.js"></script>
+        <script src="js/build/jquery.datetimepicker.full.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
