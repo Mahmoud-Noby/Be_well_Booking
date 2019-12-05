@@ -942,6 +942,16 @@ lab style
 .notification{
     margin: 70px 0;
 }
+.notification .process::before{
+    top: 245px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 96%;
+    height: 1px;
+    background-color: #ccc;
+    margin-left: 30px;
+}
 .reservation_tab .reservation_icon{
     background-color: #fff;
     width: 100px;
