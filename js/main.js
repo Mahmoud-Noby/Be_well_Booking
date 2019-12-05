@@ -101,7 +101,7 @@ $('#lab_request_preferred_time').datetimepicker({
         }
     });
     $('#lab_request_patient_area').on('change', function () {
-        var area = $('#lab_request_patient_area').val();
+        var area = $(this).val();
         switch (area) {
             case 'Downtown Cairo':
                 $('#lab_request_branch').html(downtown_branchs);
@@ -234,4 +234,20 @@ $('#lab_request_preferred_time').datetimepicker({
 
 
 
+// Reservation Page 
 
+$('.reservation_tab .reservation_clinic').click(function() {
+    $(this).addClass('chosen');
+    $('.reservation_tab .reservation_lab').removeClass('chosen');
+    $('.reservation_tab .reservation_rad').removeClass('chosen');
+});
+$('.reservation_tab .reservation_lab').click(function() {
+    $(this).addClass('chosen');
+    $('.reservation_tab .reservation_clinic').removeClass('chosen');
+    $('.reservation_tab .reservation_rad').removeClass('chosen');
+});
+$('.reservation_tab .reservation_rad').click(function() {
+    $(this).addClass('chosen');
+    $('.reservation_tab .reservation_lab').removeClass('chosen');
+    $('.reservation_tab .reservation_clinic').removeClass('chosen');
+});
