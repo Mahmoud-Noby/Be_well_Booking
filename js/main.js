@@ -22,17 +22,17 @@ $(document).ready(function () {
 ///////////////////////DATE AND TIME PIKER//////////////////////////////////////
 
 
-$('#lab_request_preferred_datetime').datetimepicker({
-    timepicker:false,
-    format:'d/m/Y'
+// $('#lab_request_preferred_datetime').datetimepicker({
+//     timepicker:false,
+//     format:'d/m/Y'
     
-});
-$('#lab_request_preferred_time').datetimepicker({
-    datepicker:false,
-    formatTime:"h:i a",
-    step:30,
-    format:"h:i "
-});
+// });
+// $('#lab_request_preferred_time').datetimepicker({
+//     datepicker:false,
+//     formatTime:"h:i a",
+//     step:30,
+//     format:"h:i "
+// });
 
 
 /////////////////////// HOME VISIT VALUES//////////////////////////////////////
@@ -230,7 +230,7 @@ $('#lab_request_preferred_time').datetimepicker({
 
         $('.human  .show-human-git').show();
     });
-});
+
 
 
 
@@ -258,4 +258,29 @@ $('.reservation_tab .reservation_rad').click(function() {
     $('#reservation_table').html(rad_reservation_info);
     $('.reservation_tab .reservation_lab').removeClass('chosen');
     $('.reservation_tab .reservation_clinic').removeClass('chosen');
+    
+});
+// Mega Search 
+var doc_options = {
+    url: "json/doctor.json",
+
+    getValue: "name",
+
+    template: {
+        type: "description",
+        fields: {
+            description: "email"
+        }
+    },
+
+    list: {
+        match: {
+            enabled: true
+        }
+    },
+};
+
+$("#auto_complete_doctor").easyAutocomplete(doc_options);
+
+
 });

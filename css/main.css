@@ -72,8 +72,8 @@
 .upper-bar .doctor:hover{
     color: #152f4f;
 }
-.upper-bar .dropdown-menu .dropdown-item a{
-    color: #08526d;
+.upper-bar .dropdown-menu .dropdown-item a {
+    color: #08526d !important;
     text-decoration :none;
 }
 
@@ -855,7 +855,7 @@ lab style
 .labs input[type=checkbox]
 {
     margin: 0;
-    -webkit-transform: scale(1.5); 
+    /* -webkit-transform: scale(1.5);  */
     padding: 0;
 }
 
@@ -1259,6 +1259,10 @@ lab style
         width: 60px !important;
         font-size: 11px;
     }
+    .dropdown-menu .dropdown-item a{
+        color: rgb(3, 3, 3);    
+    }
+
 }
 
 
