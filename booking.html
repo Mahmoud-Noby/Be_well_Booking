@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/easy-autocomplete.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -49,8 +50,7 @@
     <nav class="navbar navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img class="main-media" src="assets/imges/BEWELL-RESIZE-logo.png"
-                    alt="Balsamee Logo">
+                <img class="main-media" src="assets/imges/BEWELL-RESIZE-logo.png" alt="Balsamee Logo">
                 <img class="media" src="assets/imges/bcamhs-icon.png">
             </a>
             <!--Media Query Navbar -->
@@ -125,24 +125,22 @@
                         <h4>Quickly find medical services near you and make an appointment online in just a few clicks
                         </h4>
                     </div>
-                    <div class="col-md-8 col-sm-12  general-search">
-                        <form>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder=" Doctor  |  Clinic  |  Specialty">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-warning " type="submit">
-                                        Search
-                                    </button>
-                                </div>
-                                <button class="btn btn-primary form-control " type="submit">
-                                    Search
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                </div>
+                <div class="row justify-content-center">
+                        <select class="form-control" id="auto_complete_specialty"></select>
+                        <select class="form-control" id="auto_complete_clinic"></select>
+                        <input type="text"  class="form-control" id="auto_complete_doctor" placeholder="Doctors">
+                        <div class="input-group-btn">
+                            <button class="btn btn-warning " type="submit">
+                                Search
+                            </button>
+                        </div>
+                        <button class="btn btn-primary form-control " type="submit">
+                            Search
+                        </button>
                 </div>
                 <div class='new-services' id='services'>
-                    <div class='row justify-content-between' >
+                    <div class='row justify-content-between'>
                         <div class='col-md-2 text-center'>
                             <div class='service-item'>
                                 <i class='service-icon fa fa-stethoscope'></i>
@@ -279,10 +277,8 @@
                             <a href="https://www.vodafone.co.uk/mobile/vodafone-techstarter_top50">
                                 <img src="assets/imges/partners/Group 114.png">
                             </a>
-                            <a href="https://cyberwales.net/en/"> <img
-                                    src="assets/imges/partners/01.png"></a>
-                            <a href="https://cwmtafmorgannwg.wales/"> <img
-                                    src="assets/imges/partners/02.png"></a>
+                            <a href="https://cyberwales.net/en/"> <img src="assets/imges/partners/01.png"></a>
+                            <a href="https://cwmtafmorgannwg.wales/"> <img src="assets/imges/partners/02.png"></a>
                             <a href="https://www.gov.uk/government/organisations/innovate-uk"> <img
                                     src="assets/imges/partners/03.png"></a>
                             <a href="https://gtr.ukri.org/projects?ref=102989"> <img
@@ -445,14 +441,47 @@
                 </div>
             </div>
         </div>
-    <!--------------------------------------------------------------end of footer-------------------------------------->
+        <!--------------------------------------------------------------end of footer-------------------------------------->
 
         <!--js Libraries-->
         <script src="js/jquery.js"></script>
         <script src="js/poppper.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easy-autocomplete.min.js"></script>
         <script src="js/main.js"></script>
 
-</body>
+
+        <script>
+            var data = [{
+                    "name": "Declan Haley",
+                    "email": "Cras.lorem.lorem@nonquam.ca"
+                },
+                {
+                    "name": "Francis Marsh",
+                    "email": "neque@arcu.edu"
+                },
+                {
+                    "name": "Gage Figueroa",
+                    "email": "Sed.auctor.odio@magnis.ca"
+                },
+                {
+                    "name": "Asher Gay",
+                    "email": "Phasellus@nonsapien.ca"
+                },
+                {
+                    "name": "Mego",
+                    "email": "Phasellus@nonsapien.ca"
+                }
+            ];
+            var specs = document.getElementById('auto_complete_specialty');
+            var clinic = document.getElementById('auto_complete_clinic');
+
+            for (var c = 0; c < data.length; c++) {
+                specs.innerHTML += '<option value="' + data[c].name + '">' + data[c].name + '</option>'
+            };
+            for (var c = 0; c < data.length; c++) {
+                clinic.innerHTML += '<option value="' + data[c].name + '">' + data[c].name + '</option>'
+            }
+        </script>
 
 </html>

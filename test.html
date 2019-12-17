@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BeWell Portal </title>
+  <link rel='icon' type="image/png" href="assets/imges/bewell-favicon.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/easy-autocomplete.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="labs-bgc">
+  <!-- Start Of Upper Bar -->
+  <div class="upper-bar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col contact">
+          <a href="contact-us.html"><i class="fas fa-phone-alt"></i></a>
+          <a href="contact-us.html"> Contact Us </a>
+        </div>
+        <div class="col-sm-10 ml-auto">
+          <ul class="auth-area">
+            <li> <a href="#" class="lang"> ع</a></li>
+            <li><a href="#" class="doctor">You are aDoctor? Join Us</a></li>
+            <li>
+              <button type="button" class="doctor btn btn-secondary dropdown-toggle btn-sm" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"
+                style="background-color: transparent; border: none; margin-bottom: 3px !important;">
+                <i class="fas fa-user"></i>
+              </button>
+              <div class=" dropdown-menu dropdown-menu-right">
+                <button class="dropdown-item" type="button"><a href="">My Profile</a></button>
+                <button class="dropdown-item" type="button"><a href="reservation-history.html">Reservation</a> </button>
+                <button class="dropdown-item" type="button"><a href="">Logout</a></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Ends Of Upper Bar -->
+  <!--Start OF  Navbar-->
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="main-media" src="assets/imges/BEWELL-RESIZE-logo.png" alt="Balsamee Logo">
+        <img class="media" src="assets/imges/bcamhs-icon.png">
+      </a>
+      <!--Media Query Navbar -->
+      <div class="contact-media-nav">
+        <a href="#">ع</a>
+        <a href="#"><i class="fas fa-phone-alt"></i></a>
+        <a href="#"> <i class="fas fa-user"></i></a>
+        <a href="#">Login</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="booking.html">
+              <img src="assets/imges/navbar/bcamhs-icon.png">
+              Booking
+            </a>
+          </li>
+          <a class="nav-link" href="#">
+            <img src="assets/imges/navbar/findDoc.png">
+            Home Visit
+          </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">
+              <img src="assets/imges/mediSrv.png">
+              Nearby Medical Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="assets/imges/heaTip.png">
+              Health Tips
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="assets/imges/navbar/video-icon.png">
+              Tele-Medicine
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link doc-media" href="#">
+              <img src="assets/imges/video-icon.png">
+              Requset a video call doctor
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link doc-media" href="#">
+              <img src="assets/imges/doctor.png">
+              You are Doctor? Join Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--End  Navbar-->
+
+
+  <!--------------------------------------------------- Labs page Content ------------------------------------------------------------------->
+  <div class="main labs">
+    <div class="container">
+      <div class="container">
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <select class="form-control" id="auto_complete_specialty" placeholder="Spcialty Name">
+
+            </select>
+          </div>
+
+          <div class="form-group col-md-3">
+            <select class="form-control" id="auto_complete_clinic" placeholder="Clinic Name">
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <input type="text" class="form-control" id="auto_complete_doctor" placeholder="Doctor Name">
+          </div>
+          <div class="form-group col-md-2">
+            <input type="button" class="btn btn-primary" id="auto_complete_doctor" value="button">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col calendar-days">
+                    <span>Sun 27 Oct</span>
+                    <span>Sun 27 Oct</span>
+                    <span>Sun 27 Oct</span>
+                    <span>Sun 27 Oct</span>
+                    <span>Sun 27 Oct</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col calendar-time">
+                    <button class="btn btn-sm btn-warning">11:30 am</button>
+                    <button class="btn btn-sm btn-warning ">11:30 am</button>
+                    <button class="btn btn-sm btn-warning empty">-</button>
+                    <button class="btn btn-sm btn-warning empty">-</button>
+                    <button class="btn btn-sm btn-warning">11:30 am</button>
+                </div>
+            </div>
+ 
+            </div>
+            <div class="carousel-item">
+              <h1>test caroseltwtsts  audak ad fadapofraf </h1>
+              <h1>test caroseltwtsts  audak ad fadapofraf </h1>
+         
+            </div>
+            <div class="carousel-item">
+              <h1>test caroseltwtsts  audak ad fadapofraf </h1>
+              <h1>test caroseltwtsts  audak ad fadapofraf </h1>
+             
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="color: black;">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black; left: 150px;"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------------------------------------------start upper footer------------------------------------------------->
+  <div class="upper-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-xs-12 ">
+          <a class="footer-logo" href="https://booking-staging.balsamee.com/">
+            <img src="assets/imges/logo45white@2x.png">
+          </a>
+          <p class="text-white-50">BeWell offers solutions for all specialties and healthcare providers</p>
+          <div class="social-icon">
+            <a href="https://www.twitter.com/balsamee_ltd?lang=en"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/balsamee/"><i class="fab fa-facebook-f "></i></a>
+            <a href="https://instagram.com/balsamee.app?igshid=40h4jztlb6n9"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/balsamee"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <a href="https://apps.apple.com/gb/app/balsamee/id1097418150">
+            <img src="assets/imges/footer/apple-store.png">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.nabdacare.nabdanet&hl=en">
+
+            <img src="assets/imges/footer/google-play-store.png">
+          </a>
+        </div>
+
+
+        <div class="col-md-2 col-xs-12">
+          <h5>Booking</h5>
+          <ul class="list-unstyled">
+            <li><a href="https://balsamee.com/visiting-doctor?lang=en">Doctor</a></li>
+            <li><a href="https://balsamee.com/medical-services?lang=en">Clinics</a></li>
+            <li><a href="https://balsamee.com/camhs?lang=en">Specialties</a></li>
+            <li><a href="https://balsamee.com/health-tips?lang=en">Labs</a></li>
+            <li><a href="https://balsamee.com/health-tips?lang=en">radiology</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <h5>Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="">Booking</a></li>
+            <li><a href="https://balsamee.com/visiting-doctor?lang=en">Home Visit</a></li>
+            <li><a href="https://balsamee.com/medical-services?lang=en">Nearby Medical Services</a></li>
+            <li><a href="https://balsamee.com/camhs?lang=en">BCAHMS</a></li>
+            <li><a href="https://balsamee.com/health-tips?lang=en">Health Tips</a></li>
+            <li><a href="https://balsamee.com/cross-border-treatments/international/search?lang=en">Cross
+                Border Treatment</a></li>
+            <li><a href="https://balsamee.com/video-call?lang=en">Tele-Medicine</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-xs-12 ">
+          <h5>Contact US</h5>
+          <ul class="list-unstyled contactus">
+            <li>
+              <h6>UK (Head Office)</h6>
+            </li>
+            <p>Regus House, Falcon Drive, Cardiff bay,
+              Cardiff, UK,
+              CF10 4 RU</p>
+            <li><strong><i class="fas fa-phone-alt"></i></strong>(+44)2922677250</li>
+            <li><strong><i class="fas fa-fax"></i></strong>(+44)2920504001</li>
+            <div class="egy-address">
+              <li><strong>
+                  <h6>Egypt</h6>
+              </li>
+              <p>14, Waleed Bin Thanian Al Saoud, Block 1163,
+                Sheraton, Heliopolis, Cairo,Egypt</p>
+              <li><strong><i class="fas fa-phone-alt"></i></strong><span>(+20)1125000026</span></li>
+              <li><strong><i class="fas fa-fax"></i></strong><span>(+20)222695640</span></li>
+
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col copyright">
+          <p class=""><small class="text-white-50">BeWell © 2019. All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------------end of footer-------------------------------------->
+
+    <!--js Libraries-->
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/poppper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easy-autocomplete.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+      var data = [{
+          "name": "Declan Haley",
+          "email": "Cras.lorem.lorem@nonquam.ca"
+        },
+        {
+          "name": "Francis Marsh",
+          "email": "neque@arcu.edu"
+        },
+        {
+          "name": "Gage Figueroa",
+          "email": "Sed.auctor.odio@magnis.ca"
+        },
+        {
+          "name": "Asher Gay",
+          "email": "Phasellus@nonsapien.ca"
+        },
+        {
+          "name": "Mego",
+          "email": "Phasellus@nonsapien.ca"
+        }
+      ];
+      var specs = document.getElementById('auto_complete_specialty');
+      var clinic = document.getElementById('auto_complete_clinic');
+
+      for (var c = 0; c < data.length; c++) {
+        specs.innerHTML += '<option value="' + data[c].name + '">' + data[c].name + '</option>'
+      };
+      for (var c = 0; c < data.length; c++) {
+        clinic.innerHTML += '<option value="' + data[c].name + '">' + data[c].name + '</option>'
+      }
+
+      $(document).on('ready', function () {
+        $(".vertical-center-4").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+          slidesToShow: 4,
+          slidesToScroll: 2
+        });
+        $(".vertical-center-3").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
+        $(".vertical-center-2").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+          slidesToShow: 2,
+          slidesToScroll: 2
+        });
+        $(".vertical-center").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+        });
+        $(".vertical").slick({
+          dots: true,
+          vertical: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
+        $(".regular").slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
+        $(".center").slick({
+          dots: true,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 5,
+          slidesToScroll: 3
+        });
+        $(".variable").slick({
+          dots: true,
+          infinite: true,
+          variableWidth: true
+        });
+        $(".lazy").slick({
+          lazyLoad: 'ondemand', // ondemand progressive anticipated
+          infinite: true
+        });
+      });
+    </script>
+</body>
+
+</html>

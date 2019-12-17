@@ -261,26 +261,14 @@ $('.reservation_tab .reservation_rad').click(function() {
     
 });
 // Mega Search 
-var doc_options = {
+var mego = {
     url: "json/doctor.json",
-
     getValue: "name",
-
-    template: {
-        type: "description",
-        fields: {
-            description: "email"
-        }
-    },
-
-    list: {
-        match: {
-            enabled: true
-        }
-    },
 };
 
-$("#auto_complete_doctor").easyAutocomplete(doc_options);
+$("#auto_complete_doctor").easyAutocomplete(mego);
 
 
 });
+
+
