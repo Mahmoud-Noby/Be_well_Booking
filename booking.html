@@ -127,17 +127,17 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                        <select class="form-control" id="auto_complete_specialty"></select>
-                        <select class="form-control" id="auto_complete_clinic"></select>
-                        <input type="text"  class="form-control" id="auto_complete_doctor" placeholder="Doctors">
-                        <div class="input-group-btn">
-                            <button class="btn btn-warning " type="submit">
-                                Search
-                            </button>
-                        </div>
-                        <button class="btn btn-primary form-control " type="submit">
+                    <select class="form-control" id="auto_complete_specialty"></select>
+                    <select class="form-control" id="auto_complete_clinic"></select>
+                    <input type="text" class="form-control" id="auto_complete_doctor" placeholder="Doctors">
+                    <div class="input-group-btn">
+                        <button class="btn btn-warning " type="submit">
                             Search
                         </button>
+                    </div>
+                    <button class="btn btn-primary form-control " type="submit">
+                        Search
+                    </button>
                 </div>
                 <div class='new-services' id='services'>
                     <div class='row justify-content-between'>
@@ -449,39 +449,5 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.easy-autocomplete.min.js"></script>
         <script src="js/main.js"></script>
-
-
-        <script>
-            var data = [{
-                    "name": "Declan Haley",
-                    "email": "Cras.lorem.lorem@nonquam.ca"
-                },
-                {
-                    "name": "Francis Marsh",
-                    "email": "neque@arcu.edu"
-                },
-                {
-                    "name": "Gage Figueroa",
-                    "email": "Sed.auctor.odio@magnis.ca"
-                },
-                {
-                    "name": "Asher Gay",
-                    "email": "Phasellus@nonsapien.ca"
-                },
-                {
-                    "name": "Mego",
-                    "email": "Phasellus@nonsapien.ca"
-                }
-            ];
-            var specs = document.getElementById('auto_complete_specialty');
-            var clinic = document.getElementById('auto_complete_clinic');
-
-            for (var c = 0; c < data.length; c++) {
-                specs.innerHTML += '<option value="' + data[c].name + '">' + data[c].name + '</option>'
-            };
-            for (var c = 0; c < data.length; c++) {
-                clinic.innerHTML += '<option value="' + data[c].name + '">' + data[c].name + '</option>'
-            }
-        </script>
-
+        
 </html>

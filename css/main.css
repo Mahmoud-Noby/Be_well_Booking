@@ -827,38 +827,26 @@ end-nabada-features
 /* ***********************************************************************************************
     *Doctor Details
 **************************************************************************************************/
-
-/* .doctor-card .col-md-4{
-    max-width: 31%;
-    margin-left: 15px;
-} */
 .doctor-details {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    padding: 30px 30px;
+    padding: 30px  30px;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
+    padding:  30px 50px;
 }
 
-.doctor-details:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.doctor-details .card-img{
+    height: 100%;
 }
-
-.date-details {
-    margin-left: 10px !important;
+.doctor-details .card p{
+    margin-bottom: 7px;
 }
-
-.doc-card .card-desc {
-    margin-left: 70px;
+@media (max-width: 768px){
+    .doctor-details {
+        padding: 30px 0;
+    }
 }
-
-.doctor-card h1 {
-    font-size: 27px;
-}
-
-/* .doctor-card h1 , h6 , h5{
-    opacity: 0.6;
-} */
 
 
 /* ***********************************************************************************************
@@ -1480,29 +1468,27 @@ label {
 
 }
 
-@media (max-width: 576px) {
-    .doctor-info .avatar {
+
+@media (max-width: 576px){
+    .doctor-info .avatar{
         margin-left: 30%;
     }
-
-    .doctor-info .member-information {
+    .doctor-info .member-information{
         margin-left: 27%;
-    }
-
-    .doctor-info .calendar-days span {
+    } 
+    .doctor-info .calendar-days span{
         font-size: 12px;
     }
-
-    .doctor-info .calendar-time .btn {
+    .doctor-info .calendar-time .btn{
         width: 60px !important;
         font-size: 11px;
     }
-
-    .dropdown-menu .dropdown-item a {
-        color: rgb(3, 3, 3);
+    .labs {
+        padding-left: 25px;
+        margin: 0;
     }
-
 }
+
 
 
 

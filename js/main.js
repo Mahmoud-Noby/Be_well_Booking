@@ -22,17 +22,17 @@ $(document).ready(function () {
 ///////////////////////DATE AND TIME PIKER//////////////////////////////////////
 
 
-// $('#lab_request_preferred_datetime').datetimepicker({
-//     timepicker:false,
-//     format:'d/m/Y'
+$('#lab_request_preferred_datetime').datetimepicker({
+    timepicker:false,
+    format:'d/m/Y'
     
-// });
-// $('#lab_request_preferred_time').datetimepicker({
-//     datepicker:false,
-//     formatTime:"h:i a",
-//     step:30,
-//     format:"h:i "
-// });
+});
+$('#lab_request_preferred_time').datetimepicker({
+    datepicker:false,
+    formatTime:"h:i a",
+    step:30,
+    format:"h:i a"
+});
 
 
 /////////////////////// HOME VISIT VALUES//////////////////////////////////////
@@ -261,9 +261,40 @@ $('.reservation_tab .reservation_rad').click(function() {
     
 });
 // Mega Search 
+var data = [{
+    "name": "Declan Haley",
+    "email": "Cras.lorem.lorem@nonquam.ca"
+},
+{
+    "name": "Francis Marsh",
+    "email": "neque@arcu.edu"
+},
+{
+    "name": "Gage Figueroa",
+    "email": "Sed.auctor.odio@magnis.ca"
+},
+{
+    "name": "Asher Gay",
+    "email": "Phasellus@nonsapien.ca"
+},
+{
+    "name": "Mego",
+    "email": "Phasellus@nonsapien.ca"
+}
+];
+var specs = document.getElementById('auto_complete_specialty');
+var clinic = document.getElementById('auto_complete_clinic');
+
+for (var c = 0; c < data.length; c++) {
+specs.innerHTML += '<option value="' + data[c].name + '">' + data[c].name + '</option>'
+};
+for (var c = 0; c < data.length; c++) {
+clinic.innerHTML += '<option value="' + data[c].name + '">' + data[c].name + '</option>'
+}
 var mego = {
     url: "json/doctor.json",
     getValue: "name",
+    
 };
 
 $("#auto_complete_doctor").easyAutocomplete(mego);
