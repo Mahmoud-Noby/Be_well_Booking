@@ -245,22 +245,14 @@
     margin-bottom: 25px;
 }
 
-.filtering #auto_complete_doctor {
-    border: none;
+.filtering .mega-search .form-control{
+  
     border-radius: 0;
-    height: 45px;
-    width: 400px !important;
-    border: 0.8px solid rgba(95, 95, 95, 0.333);
 }
-
-.filtering .form-control {
-    border: none;
-    border-radius: 0;
-    height: 45px;
-    max-width: 400px !important;
-    border: 0.8px solid rgba(95, 95, 95, 0.333);
+.filtering .form-row>.col, .form-row>[class*=col-] {
+    padding-right: 0px;
+    padding-left: 0px;
 }
-
 .filtering .btn-primary {
     display: none;
 }
@@ -577,13 +569,19 @@ end-nabada-features
 *Start Doctors List Page #00234B
 **************************************************************************************************/
 
+.doctor-info{
+    padding: 0 30px;
+}
+
 .help-filter .btn {
     width: 100%;
     margin-bottom: 10px !important;
 }
-
-.doctor-info h6 {
+.doctor-info h5 {
     font-size: 14px;
+}
+.doctor-info h6 {
+    font-size: 12px;
 }
 
 .doctor-info .card {
@@ -597,10 +595,12 @@ end-nabada-features
 }
 .doctor-info .calendar-days{
     width: 100%;
+    margin-bottom: 20px;
+
 }
 .doctor-info .calendar-days .slot-day {
     display: inline;
-    padding: 30px;
+    padding: 0 5px;
     font-weight: bold;
     opacity: 0.7;
     font-size: 14px;
@@ -614,7 +614,7 @@ end-nabada-features
     background-color: #004876;
     color: #FFF;
     border-color: #004876;
-    width: 135px !important;
+    width: 80px !important;
     border-radius: 0 !important;
 }
 
@@ -634,15 +634,18 @@ end-nabada-features
     border: none;
 }
 
+.doctor-info .small-media{
+    display: none;
+}
 
 .carousel-control-prev {
     left: 0;
-    top: -77px;
-    width: 30px;
+    top: -90px;
+    width: 0;
 }
 .carousel-control-next {
-    top: -77px;
-    width: 30px;
+    top: -90px;
+    width: 0;
 }
 .carousel-control-next-icon:after {
     content: '>';
@@ -659,6 +662,70 @@ end-nabada-features
 }
 
 /* ***********************************************************************************************
+    *Start Doctors Details and confirm Reservation Time  Page
+**************************************************************************************************/
+.doctor-card{ 
+}
+.doctor-card .doctor-card__title{
+    padding: 15px 0  0  0;
+}
+.doctor-card .doctor-card__title img{
+    max-width: 120px !important;
+    max-height: 120px !important;
+    border-radius: 100%;
+    background: rgb(192, 186, 186);
+}
+.doctor-card .doctor-card__title h3{
+    font-size: 19px;
+    color: #00234B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.doctor-card .doctor-card__title h4{
+    font-size: 12px;
+    color: #00234B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.doctor-card .doctor-card__side{
+    background-color: rgb(243, 243, 243);
+    padding: 15px 35px;
+
+}
+
+.doctor-card .doctor-card__side h1{
+    font-size: 23px;
+    font-weight: bold;
+    color: #00234B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+    padding-bottom:15px ;
+    border-bottom: 1px solid #999999;
+}
+.doctor-card .doctor-card__side h4{
+    font-size: 16px;
+    color: #00234B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding-bottom:15px ;
+    border-bottom: 1px solid #999999;
+}
+
+.doctor-card .doctor-card__side button{
+    margin-top:25px
+}
+.doctor-card .doctor-card__about-doctor{
+    background-color: #fff;
+    padding: 50px;
+}
+.doctor-card .doctor-card__about-doctor h1{
+    font-size: 23px;
+    color: #00234B;
+}
+.doctor-card .doctor-card__about-doctor p{
+    font-size: 14px;
+    color: #00234B;
+}
+/* ***********************************************************************************************
     *Start Clinics Page
 **************************************************************************************************/
 #clinics-body {
@@ -666,7 +733,7 @@ end-nabada-features
 }
 
 .all-clincs {
-    padding: 50px 20px;
+    padding: 50px 70px;
 }
 
 .all-clincs h3 {
@@ -676,14 +743,14 @@ end-nabada-features
     color: #004f6d
 }
 
-.all-clincs .clinic-card {
+.all-clincs .card {
     background-color: #fff;
     padding: 10px 19px;
     box-shadow: 0 2px 4px 0 rgba(5, 150, 222, 0.2);
     -webkit-transition: color 200ms ease, box-shadow 200ms ease;
     transition: color 200ms ease, box-shadow 200ms ease;
     border-color: transparent;
-    max-width: 48% !important;
+    /* max-width: 48% !important; */
     margin: 0 11px;
     border-radius: 8px;
 }
@@ -950,6 +1017,7 @@ lab style
 **************************************************************************************************/
 .labs-bgc {
     background-color: #f2fafd !important;
+    height: 3000px;
 }
 
 .labs .labs-card {
@@ -1151,6 +1219,7 @@ label {
     Media Query     
 **************************************************************************************************/
 @media (max-width: 768px) {
+
     .filtering h3 {
         font-size: 21px;
     }
@@ -1190,13 +1259,6 @@ label {
         margin-bottom: 25px;
     }
 
-    .filtering .form-control {
-        border: none;
-        border-radius: 0;
-        height: 45px;
-        font-weight: 700;
-        width: 100% !important;
-    }
 
     .filtering .btn-warning {
         display: none;
@@ -1220,8 +1282,8 @@ label {
         margin-top: 30px;
     }
 
-    .all-clincs .clinic-card {
-        max-width: 100% !important;
+    .all-clincs  {
+        padding: 30px 0;
     }
 
 }
@@ -1229,7 +1291,10 @@ label {
 @media (max-width: 992px) {
 
     .all-clincs .clinic-card {
+        padding: 0;
         max-width: 100% !important;
+        margin: 0;
+        margin-bottom: 30px;
     }
 
     /* upper navbarbar && navbar */
@@ -1450,43 +1515,74 @@ label {
     }
 
     /* Doctors Page */
-    .doctor-info .card-responsive {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+   
+    .doctor-info{
+        margin: 0;
+        padding: 0 ;
     }
-
-    .doctor-info .calendar {
-        margin: 15px auto;
+    
+    .help-filter{
+        margin-bottom: -78px;
     }
-
+/*//////////////////////////////////////////////////////////////////////////////
+DOCTOR dETAILS AND RESERVATION cONFIRMATION HAHAHHAH
+*/
+.doctor-card .doctor-card__side label{
+    display: none;
+}
+.doctor-card .doctor-card__side .form-control{
+    margin-top: 10px;
+}
     /* CLINICS PAGE */
 
     .all-clincs .clinic-card {
         width: 100% !important;
     }
-
+    .all-clincs .clinic-card {
+        padding: 10px;
+    }
 }
 
-
 @media (max-width: 576px){
-    .doctor-info .avatar{
-        margin-left: 30%;
-    }
-    .doctor-info .member-information{
-        margin-left: 27%;
-    } 
+
     .doctor-info .calendar-days span{
         font-size: 12px;
     }
     .doctor-info .calendar-time .btn{
-        width: 60px !important;
+        width: 80px !important;
         font-size: 11px;
     }
+.doctor-info .member-information{
+    width: 50%;
+}
+    .doctor-info .larg-media{
+        display: none;
+    }
+    .doctor-info .small-media{
+        display: block;
+    }
+    .carousel-control-next {
+        top: -75px;
+        width: 0px;
+    }
+    .carousel-control-next-icon:after {
+        font-size: 24px;
+    }
+    .carousel-control-prev {
+        top: -75px;
+        width: 0px;
+    }
+    .carousel-control-prev-icon:after {
+        font-size: 24px;
+    }
+
+
+
     .labs {
         padding-left: 25px;
         margin: 0;
     }
+
 }
 
 
