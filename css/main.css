@@ -246,12 +246,12 @@
 }
 
 .filtering .mega-search .form-control{
-  
+
     border-radius: 0;
 }
-.filtering .form-row>.col, .form-row>[class*=col-] {
-    padding-right: 0px;
-    padding-left: 0px;
+.filtering .mega-search .mega_search {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
 }
 .filtering .btn-primary {
     display: none;
@@ -1017,7 +1017,6 @@ lab style
 **************************************************************************************************/
 .labs-bgc {
     background-color: #f2fafd !important;
-    height: 3000px;
 }
 
 .labs .labs-card {
