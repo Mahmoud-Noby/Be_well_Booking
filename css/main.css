@@ -244,15 +244,17 @@
     font-weight: 600;
     margin-bottom: 25px;
 }
-
 .filtering .mega-search .form-control{
+    border-radius: 0 !important;
+
+}
+.filtering .mega-search .mega_search{
   
-    border-radius: 0;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
 }
-.filtering .form-row>.col, .form-row>[class*=col-] {
-    padding-right: 0px;
-    padding-left: 0px;
-}
+
 .filtering .btn-primary {
     display: none;
 }
@@ -664,8 +666,7 @@ end-nabada-features
 /* ***********************************************************************************************
     *Start Doctors Details and confirm Reservation Time  Page
 **************************************************************************************************/
-.doctor-card{ 
-}
+
 .doctor-card .doctor-card__title{
     padding: 15px 0  0  0;
 }
