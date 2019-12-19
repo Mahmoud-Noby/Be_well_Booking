@@ -640,12 +640,12 @@ end-nabada-features
 
 .carousel-control-prev {
     left: 0;
-    top: -100px;
-    width: 30px;
+    top: -90px;
+    width: 0;
 }
 .carousel-control-next {
-    top: -100px;
-    width: 30px;
+    top: -90px;
+    width: 0;
 }
 .carousel-control-next-icon:after {
     content: '>';
@@ -661,6 +661,70 @@ end-nabada-features
     color: rgb(73, 73, 73);
 }
 
+/* ***********************************************************************************************
+    *Start Doctors Details and confirm Reservation Time  Page
+**************************************************************************************************/
+.doctor-card{ 
+}
+.doctor-card .doctor-card__title{
+    padding: 15px 0  0  0;
+}
+.doctor-card .doctor-card__title img{
+    max-width: 120px !important;
+    max-height: 120px !important;
+    border-radius: 100%;
+    background: rgb(192, 186, 186);
+}
+.doctor-card .doctor-card__title h3{
+    font-size: 19px;
+    color: #00234B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.doctor-card .doctor-card__title h4{
+    font-size: 12px;
+    color: #00234B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.doctor-card .doctor-card__side{
+    background-color: rgb(243, 243, 243);
+    padding: 15px 35px;
+
+}
+
+.doctor-card .doctor-card__side h1{
+    font-size: 23px;
+    font-weight: bold;
+    color: #00234B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+    padding-bottom:15px ;
+    border-bottom: 1px solid #999999;
+}
+.doctor-card .doctor-card__side h4{
+    font-size: 16px;
+    color: #00234B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding-bottom:15px ;
+    border-bottom: 1px solid #999999;
+}
+
+.doctor-card .doctor-card__side button{
+    margin-top:25px
+}
+.doctor-card .doctor-card__about-doctor{
+    background-color: #fff;
+    padding: 50px;
+}
+.doctor-card .doctor-card__about-doctor h1{
+    font-size: 23px;
+    color: #00234B;
+}
+.doctor-card .doctor-card__about-doctor p{
+    font-size: 14px;
+    color: #00234B;
+}
 /* ***********************************************************************************************
     *Start Clinics Page
 **************************************************************************************************/
@@ -1460,8 +1524,15 @@ label {
     .help-filter{
         margin-bottom: -78px;
     }
-
-
+/*//////////////////////////////////////////////////////////////////////////////
+DOCTOR dETAILS AND RESERVATION cONFIRMATION HAHAHHAH
+*/
+.doctor-card .doctor-card__side label{
+    display: none;
+}
+.doctor-card .doctor-card__side .form-control{
+    margin-top: 10px;
+}
     /* CLINICS PAGE */
 
     .all-clincs .clinic-card {

@@ -10,10 +10,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/date-time picker/jquery.datetimepicker.min.css">
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body >
+<body>
     <!-- Start Of Upper Bar -->
     <div class="upper-bar">
         <div class="container-fluid">
@@ -116,78 +118,46 @@
     <div class="doctor-card main">
         <div class="container-fluid">
             <!--doctor Card-->
-            <div class="row ">
-                <div class="col-lg-6 col-md-12 ">
-                    <div class="card mb-3" >
-                        <div class="row no-gutters">
-                            <div class="col-md-3">
-                                <img src="assets/imges/product-grey-1.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Dr. Lamees Alshawkani</h5>
-                                    <p class="card-text">Consultant orthopedic surgery and spine surgery ,
-                                        joints, and shoulder and knee injuries sidelined hospitals Police Authority</p>
-                                    <p class="card-text"><strong>Entity:</strong> 1215225815552</small></p>
-                                    <p class="card-text"><strong>Specialty:</strong> 1215225815552</small></p>
-                                    <p class="card-text"><strong>Mobile:</strong> 1215225815552</small></p>
-                                </div>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class=" col-md-7 doctor-card__title">
+                    <div class="text-center">
+                        <img src="assets/imges/doc-avatar.png" alt="">
+                        <h3>Dr.Full Name</h3>
+                        <h4>Speciatly, Clinic Name</h4>
+                        <h4>010xxxxxxxx, Cairo, Egypt</h4>
                     </div>
-                    <hr />
-                    <h4>About Dr. Lamees Alshawkani</h4>
-                    <p>Lamees Alshawkani is a licensed optometrist practicing full scope eye care at SEE Eyewear in
-                        Soho.</p>
-                    <p>Dr. Alshawkani graduated with a Bachelor of Science in Health Science from George Mason
-                        University in 2009.
-                        She then went on to obtain her joint Doctorate of Optometry <a href="#"> …read more</a></p>
+                    <div class=" doctor-card__about-doctor">
+                        <h1>About Dr.Doctor Name</h1>
+                        <p>“ESTABLISHED PATIENTS PLEASE DO NOT BOOK AS A NEW PATIENT”<br><br>
+
+                            “IF YOU SCHEDULED AN ANNUAL AND ARE ACTUALLY A NEW PATIENT TO THE PRACTICE YOU WILL NOT BE
+                            SEEN. SO
+                            PLEASE MAKE SURE YOU SCHEDULED APPROPRIATELY AS A NEW PATIENT.”<br>
+                            <a href="#"> …read more</a></p>
+                    </div>
                 </div>
-
-                <div class="col-md-4 col-sm-12 ">
-                    <div class="form-row">
-                        <div class="form-group  ">
-                            <label for="">from</label>
-                            <input type="datetime-local" class="form-control">
+                <div class="col-md-5 doctor-card__side">
+                    <h1>Book an appointment </h1>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <label>From</label>
+                            <input type="text" class="form-control"  placeholder="From">
                         </div>
-                        <div class="form-group ">
-                            <label for="">to</label>
-                            <input type="datetime-local" class="form-control">
-                        </div>
-                    </div>
-
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-sm btn-primary form-control" data-toggle="modal"
-                        data-target="#exampleModalCenter">
-                        Book Now
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title text-center" id="exampleModalLongTitle">Login</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <input class="form-control" type="email" name="email"
-                                            placeholder="Enter Your Email" style="margin-bottom: 10px;">
-                                        <input class="form-control" type="password" name="password"
-                                            placeholder="Enter Your PAssword">
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary btn-sm form-control "
-                                        data-dismiss="modal">Login</button>
-                                </div>
-                            </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label>To</label>
+                            <input type="text" class="form-control" placeholder="To">
                         </div>
                     </div>
+                    <h4>Select your preferred time range</h4>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <input type="text" class="form-control client_preferred_time" >
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <input type="text" class="form-control client_preferred_time">
+                        </div>
+                    </div>
+                    <button class="btn btn-info form-control">Book Now</button>
                 </div>
             </div>
         </div>
@@ -196,91 +166,92 @@
 
     <!---------------------------------------------- end upper footer------------------------------------------------------------------->
     <div class="upper-footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12 ">
-                        <a class="footer-logo" href="https://booking-staging.balsamee.com/">
-                            <img src="assets/imges/logo45white@2x.png">
-                        </a>
-                        <p class="text-white-50">BeWell offers solutions for all specialties and healthcare providers</p>
-                        <div class="social-icon">
-                            <a href="https://www.twitter.com/balsamee_ltd?lang=en"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/balsamee/"><i class="fab fa-facebook-f "></i></a>
-                            <a href="https://instagram.com/balsamee.app?igshid=40h4jztlb6n9"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/balsamee"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <a href="https://apps.apple.com/gb/app/balsamee/id1097418150">
-                            <img src="assets/imges/footer/apple-store.png">
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.nabdacare.nabdanet&hl=en">
-    
-                            <img src="assets/imges/footer/google-play-store.png">
-                        </a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 ">
+                    <a class="footer-logo" href="https://booking-staging.balsamee.com/">
+                        <img src="assets/imges/logo45white@2x.png">
+                    </a>
+                    <p class="text-white-50">BeWell offers solutions for all specialties and healthcare providers</p>
+                    <div class="social-icon">
+                        <a href="https://www.twitter.com/balsamee_ltd?lang=en"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/balsamee/"><i class="fab fa-facebook-f "></i></a>
+                        <a href="https://instagram.com/balsamee.app?igshid=40h4jztlb6n9"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/balsamee"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-    
-    
-                    <div class="col-md-2 col-xs-12">
-                        <h5>Booking</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="https://balsamee.com/visiting-doctor?lang=en">Doctor</a></li>
-                            <li><a href="https://balsamee.com/medical-services?lang=en">Clinics</a></li>
-                            <li><a href="https://balsamee.com/camhs?lang=en">Specialties</a></li>
-                            <li><a href="https://balsamee.com/health-tips?lang=en">Labs</a></li>
-                            <li><a href="https://balsamee.com/health-tips?lang=en">radiology</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col-xs-12">
-                        <h5>Services</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="">Booking</a></li>
-                            <li><a href="https://balsamee.com/visiting-doctor?lang=en">Home Visit</a></li>
-                            <li><a href="https://balsamee.com/medical-services?lang=en">Nearby Medical Services</a></li>
-                            <li><a href="https://balsamee.com/camhs?lang=en">BCAHMS</a></li>
-                            <li><a href="https://balsamee.com/health-tips?lang=en">Health Tips</a></li>
-                            <li><a href="https://balsamee.com/cross-border-treatments/international/search?lang=en">Cross
-                                    Border Treatment</a></li>
-                            <li><a href="https://balsamee.com/video-call?lang=en">Tele-Medicine</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col-xs-12 ">
-                        <h5>Contact US</h5>
-                        <ul class="list-unstyled contactus">
-                            <li>
-                                <h6>UK (Head Office)</h6>
-                            </li>
-                            <p>Regus House, Falcon Drive, Cardiff bay,
-                                Cardiff, UK,
-                                CF10 4 RU</p>
-                            <li><strong><i class="fas fa-phone-alt"></i></strong>(+44)2922677250</li>
-                            <li><strong><i class="fas fa-fax"></i></strong>(+44)2920504001</li>
-                            <div class="egy-address">
-                                <li><strong>
-                                        <h6>Egypt</h6>
-                                </li>
-                                <p>14, Waleed Bin Thanian Al Saoud, Block 1163,
-                                    Sheraton, Heliopolis, Cairo,Egypt</p>
-                                <li><strong><i class="fas fa-phone-alt"></i></strong><span>(+20)1125000026</span></li>
-                                <li><strong><i class="fas fa-fax"></i></strong><span>(+20)222695640</span></li>
-    
-                            </div>
-                        </ul>
-                    </div>
+                    <a href="https://apps.apple.com/gb/app/balsamee/id1097418150">
+                        <img src="assets/imges/footer/apple-store.png">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.nabdacare.nabdanet&hl=en">
+
+                        <img src="assets/imges/footer/google-play-store.png">
+                    </a>
                 </div>
-                <div class="row mt-5">
-                    <div class="col copyright">
-                        <p class=""><small class="text-white-50">BeWell © 2019. All Rights Reserved.</small></p>
-                    </div>
+
+
+                <div class="col-md-2 col-xs-12">
+                    <h5>Booking</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://balsamee.com/visiting-doctor?lang=en">Doctor</a></li>
+                        <li><a href="https://balsamee.com/medical-services?lang=en">Clinics</a></li>
+                        <li><a href="https://balsamee.com/camhs?lang=en">Specialties</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">Labs</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">radiology</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="">Booking</a></li>
+                        <li><a href="https://balsamee.com/visiting-doctor?lang=en">Home Visit</a></li>
+                        <li><a href="https://balsamee.com/medical-services?lang=en">Nearby Medical Services</a></li>
+                        <li><a href="https://balsamee.com/camhs?lang=en">BCAHMS</a></li>
+                        <li><a href="https://balsamee.com/health-tips?lang=en">Health Tips</a></li>
+                        <li><a href="https://balsamee.com/cross-border-treatments/international/search?lang=en">Cross
+                                Border Treatment</a></li>
+                        <li><a href="https://balsamee.com/video-call?lang=en">Tele-Medicine</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-12 ">
+                    <h5>Contact US</h5>
+                    <ul class="list-unstyled contactus">
+                        <li>
+                            <h6>UK (Head Office)</h6>
+                        </li>
+                        <p>Regus House, Falcon Drive, Cardiff bay,
+                            Cardiff, UK,
+                            CF10 4 RU</p>
+                        <li><strong><i class="fas fa-phone-alt"></i></strong>(+44)2922677250</li>
+                        <li><strong><i class="fas fa-fax"></i></strong>(+44)2920504001</li>
+                        <div class="egy-address">
+                            <li><strong>
+                                    <h6>Egypt</h6>
+                            </li>
+                            <p>14, Waleed Bin Thanian Al Saoud, Block 1163,
+                                Sheraton, Heliopolis, Cairo,Egypt</p>
+                            <li><strong><i class="fas fa-phone-alt"></i></strong><span>(+20)1125000026</span></li>
+                            <li><strong><i class="fas fa-fax"></i></strong><span>(+20)222695640</span></li>
+
+                        </div>
+                    </ul>
                 </div>
             </div>
-    
-    <!--------------------------------------------------------------end of footer-------------------------------------->
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p class=""><small class="text-white-50">BeWell © 2019. All Rights Reserved.</small></p>
+                </div>
+            </div>
+        </div>
 
-    <!--js Libraries-->
-    <script src="js/jquery.js"></script>
-    <script src="js/poppper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+        <!--------------------------------------------------------------end of footer-------------------------------------->
+
+        <!--js Libraries-->
+        <script src="js/jquery.js"></script>
+        <script src="js/poppper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/data-time-picker/jquery.datetimepicker.full.min.js"></script>
+        <script src="js/doctor-details.js"></script>
 </body>
 
 </html>
