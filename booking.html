@@ -454,11 +454,41 @@
                 <!--------------------------------------------------------------end of footer-------------------------------------->
 
                 <!--js Libraries-->
-                <script src="js/jquery.js"></script>
+                <script
+                src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+                crossorigin="anonymous"></script>
                 <script src="js/poppper.js"></script>
                 <script src="js/bootstrap.min.js"></script>
                 <script src="js/easy-autocomplete/jquery.easy-autocomplete.min.js"></script>
-                <script src="js/main.js"></script>
+                <script src="js/home.js"></script>
                 </body>
 
 </html>
+
+<script>
+$(document).ready(function(){
+    var options = {
+    url: "json/doctor.json",
+
+    getValue: "name",
+
+    template: {
+        type: "description",
+        fields: {
+            description: "email"
+        }
+    },
+
+    list: {
+        match: {
+            enabled: true
+        }
+    },
+
+    theme: "plate-dark"
+};
+
+$("#auto_complete_doctor").easyAutocomplete(options);
+})
+</script>

@@ -1185,7 +1185,18 @@ label {
     background-color: #ccc;
     margin-left: 30px;
 }
-
+@media (min-width: 768px)and (max-width: 991.98px) { 
+    .notification .process::before {
+        top: 195px;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 96%;
+        height: 1px;
+        background-color: #ccc;
+        margin-left: 30px;
+    }
+ }
 .reservation_tab .reservation_icon {
     background-color: #fff;
     width: 100px;
@@ -1283,6 +1294,38 @@ label {
 
     .all-clincs  {
         padding: 30px 0;
+    }
+    /*///////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    reservation page media queiries max 768
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    */
+    .notification .process::before {
+        top: 180px;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
+     }
+    .reservation_tab .reservation_icon {
+        background-color: #fff;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        color: #004876;
+        line-height: 70px;
+        border: 1px solid #e2e2e2;
+        font-size: 27px;
+        cursor: pointer;
+    }
+    .reservation_tab h5{
+        font-size: 14px;
+    }
+    .notification .table thead th{
+        font-size: 12px;
     }
 
 }
