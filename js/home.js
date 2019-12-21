@@ -32,6 +32,29 @@ specs.innerHTML += '<option value="' + data[c].name + '">' + data[c].name + '</o
 for (var c = 0; c < data.length; c++) {
 clinic.innerHTML += '<option value="' + data[c].name + '">' + data[c].name + '</option>'
 }
+$(document).ready(function(){
+    var options = {
+    url: "/json/doctor.json",
 
+    getValue: "name",
+
+    template: {
+        type: "description",
+        fields: {
+            description: "email"
+        }
+    },
+
+    list: {
+        match: {
+            enabled: true
+        }
+    },
+
+    theme: "plate-dark"
+};
+
+$("#auto_complete_doctor").easyAutocomplete(options);
+})
 
 })
